@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Title: 2. C:\Users\batagelj\Documents\papers\2018\moskva\december\nets\HSEexample1.net (6) -->
+<!-- Creator: Pajek 5.05: http://mrvar.fdv.uni-lj.si/pajek -->
+<!-- CreationDate: 12-04-2018, 22:40:21 -->
+<svg xml:space="preserve" viewBox="0 0 691 670" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<title>2. C:\Users\batagelj\Documents\papers\2018\moskva\december\nets\HSEexample1.net (6)</title>
+<g inkscape:groupmode="layer" id="PajekSig" inkscape:label="PajekSignature">
+<g transform="translate(3 652)">
+<g transform="scale(0.1)">
+<g transform="matrix(1 0 0 -1 0 96)">
+<path d="M   7.67  49.98 L  31.76  72.76 L  46.91  78.63
+         L  57.23  80.49 M  72.86  65.23 L  65.73  83.25
+         L  57.06  75.49 L  56.75  68.65 M  76.27  68.03
+         L  75.65  84.50 L  93.92  91.02 L 107.24  74.87
+         M  80.29  67.72 L  89.28  84.81 L 104.77  81.70
+         L 116.23  73.31 L 121.18  59.33 M  56.75  81.08
+         L  71.31  64.30"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  86.18  70.21 L  91.45  73.00 L  95.78  69.58
+         M  91.14  60.88 L  96.09  62.75 L  98.26  59.33"
+         style="fill:none; stroke:saddlebrown; stroke-width:1.5;"/>
+<path d="M  81.07  49.08 L  87.81  49.08 L  93.30  54.38
+         L  93.30  60.88 L  93.30  67.39 L  87.81  72.69
+         L  81.07  72.69 L  74.33  72.69 L  68.83  67.39
+         L  68.83  60.88 L  68.83  54.38 L  74.33  49.08
+         L  81.07  49.08 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;"/>
+<path d="M  54.63  37.53 L  68.53  43.56 L  75.39  55.85
+         L  69.90  65.35 L  64.41  72.86 L  48.60  74.06
+         L  34.71  68.04 L  20.81  55.02 L  15.95  40.72
+         L  17.44  33.22 L  24.92  28.72 L  40.73  30.51
+         L  54.63  37.53 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;" />
+<path d="M  77.82  50.63 L 103.84  59.33 L 131.10  43.80
+         L 139.46  27.95 L 139.15  15.83 M  35.99   5.27
+         L  47.15  32.92 L  61.71  50.01 L  70.07  46.90
+         L  82.77  45.04 L  83.39  27.02 L  65.42  12.11
+         M  68.52  50.63 L  91.14  49.39 L 103.53  43.17
+         L 117.16  22.67 L 115.30   8.38"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  41.57  54.98 L  60.16  64.61 M  52.41  66.17
+         L  57.99  57.47"
+         style="fill:none; stroke:white; stroke-width:5;"/>
+</g>
+</g>
+<animateMotion dur="20s" path="M3 0 L673 0" begin="120s" fill="freeze"/>
+</g>
+<g transform="translate(3 652)">
+<g transform="scale(0.1)">
+<text x="5" y="140" style="font-family:Brush Script MT;font-size:75px;fill:green;">Pajek</text>
+</g>
+<animateMotion dur="0.1s" path="M3 0 L673 0" begin="120s" fill="freeze"/>
+</g>
+</g>      <!-- Layer Signature -->
+
+<g inkscape:groupmode="layer" id="PajekNet" inkscape:label="PajekNetwork">
+
+<!-- Arc:     1    4 -->
+<g transform="translate(578.15 335.00)">
+<g transform="rotate(360.00)">
+<path d="M 0 0 L -4.00 10.00 L 20.00 0 L -4.00 -10.00 z" style="fill:rgb(255,0,0)"/>
+</g></g>
+<line x1="69.10" y1="335.00" x2="578.15" y2="335.00" style="stroke-width:3.00;stroke:rgb(255,0,0)"/>
+<!-- Arc:     2    6 -->
+<g transform="translate(207.30 523.34)">
+<g transform="rotate(450.00)">
+<path d="M 0 0 L -4.00 10.00 L 20.00 0 L -4.00 -10.00 z" style="fill:rgb(255,0,0)"/>
+</g></g>
+<line x1="207.30" y1="102.91" x2="207.30" y2="523.34" style="stroke-width:3.00;stroke:rgb(255,0,0)"/>
+<!-- Arc:     3    2 -->
+<g transform="translate(251.05 102.91)">
+<g transform="rotate(180.00)">
+<path d="M 0 0 L -4.00 10.00 L 20.00 0 L -4.00 -10.00 z" style="fill:rgb(255,0,0)"/>
+</g></g>
+<line x1="483.70" y1="102.91" x2="251.05" y2="102.91" style="stroke-width:3.00;stroke:rgb(255,0,0)"/>
+<!-- Arc:     4    5 -->
+<g transform="translate(506.15 529.55)">
+<g transform="rotate(480.75)">
+<path d="M 0 0 L -4.00 10.00 L 20.00 0 L -4.00 -10.00 z" style="fill:rgb(255,0,0)"/>
+</g></g>
+<line x1="621.90" y1="335.00" x2="506.15" y2="529.55" style="stroke-width:3.00;stroke:rgb(255,0,0)"/>
+<!-- Arc:     5    1 -->
+<g transform="translate(109.37 351.14)">
+<g transform="rotate(194.25)">
+<path d="M 0 0 L -4.00 10.00 L 20.00 0 L -4.00 -10.00 z" style="fill:rgb(255,0,0)"/>
+</g></g>
+<path d="M 483.70 567.09 C 445.49 528.91 161.56 365.10 109.37 351.14" style="stroke-width:3.00;stroke:rgb(255,0,0);fill:none"/> 
+<!-- Arc:     6    3 -->
+<g transform="translate(461.24 140.45)">
+<g transform="rotate(300.76)">
+<path d="M 0 0 L -4.00 10.00 L 20.00 0 L -4.00 -10.00 z" style="fill:rgb(255,0,0)"/>
+</g></g>
+<line x1="207.30" y1="567.09" x2="461.24" y2="140.45" style="stroke-width:3.00;stroke:rgb(255,0,0)"/>
+<!-- Edge:     1    5 -->
+<path d="M 69.10 335.00 C 111.65 376.44 426.13 552.48 483.70 567.09" style="stroke-width:3.00;stroke:rgb(0,112,145);fill:none"/> 
+<!-- Edge:     3    4 -->
+<line x1="483.70" y1="102.91" x2="621.90" y2="335.00" style="stroke-width:3.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3    3 -->
+<path d="M 483.70 102.91 C 509.35 32.43 458.05 32.43 483.70 102.91" style="stroke-width:3.00;stroke:rgb(0,112,145);fill:none"/> 
+
+<!-- Vertex:     1 -->
+<ellipse cx="69.10" cy="335.00" rx="22.50" ry="22.50" style="fill:rgb(255,255,0);stroke:rgb(0,0,0);stroke-width:0.50;"/>
+<text x="69.10" y="348.33" style="font-family:Arial Unicode MS;font-weight: bold;font-size:40px;fill:rgb(96,109,196);text-anchor:middle;">a</text>
+<!-- Vertex:     2 -->
+<ellipse cx="207.30" cy="102.91" rx="22.50" ry="22.50" style="fill:rgb(255,255,0);stroke:rgb(0,0,0);stroke-width:0.50;"/>
+<text x="207.30" y="116.24" style="font-family:Arial Unicode MS;font-weight: bold;font-size:40px;fill:rgb(96,109,196);text-anchor:middle;">f</text>
+<!-- Vertex:     3 -->
+<ellipse cx="483.70" cy="102.91" rx="22.50" ry="22.50" style="fill:rgb(255,255,0);stroke:rgb(0,0,0);stroke-width:0.50;"/>
+<text x="483.70" y="116.24" style="font-family:Arial Unicode MS;font-weight: bold;font-size:40px;fill:rgb(96,109,196);text-anchor:middle;">c</text>
+<!-- Vertex:     4 -->
+<ellipse cx="621.90" cy="335.00" rx="22.50" ry="22.50" style="fill:rgb(255,255,0);stroke:rgb(0,0,0);stroke-width:0.50;"/>
+<text x="621.90" y="348.33" style="font-family:Arial Unicode MS;font-weight: bold;font-size:40px;fill:rgb(96,109,196);text-anchor:middle;">b</text>
+<!-- Vertex:     5 -->
+<ellipse cx="483.70" cy="567.09" rx="22.50" ry="22.50" style="fill:rgb(255,255,0);stroke:rgb(0,0,0);stroke-width:0.50;"/>
+<text x="483.70" y="580.43" style="font-family:Arial Unicode MS;font-weight: bold;font-size:40px;fill:rgb(96,109,196);text-anchor:middle;">d</text>
+<!-- Vertex:     6 -->
+<ellipse cx="207.30" cy="567.09" rx="22.50" ry="22.50" style="fill:rgb(255,255,0);stroke:rgb(0,0,0);stroke-width:0.50;"/>
+<text x="207.30" y="580.43" style="font-family:Arial Unicode MS;font-weight: bold;font-size:40px;fill:rgb(96,109,196);text-anchor:middle;">e</text>
+</g>         <!-- Layer Network -->
+</svg>
