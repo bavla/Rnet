@@ -17,13 +17,13 @@ write.graph.paj <- function(N,file="test.paj",coor=NULL,va=NULL,ea=NULL,
   if(is.null(coor)){  
     if("name" %in% va) for(v in V(N)) cat(v,' "',V(N)$name[v],'"\n',sep="",file=paj)
   } else { 
-    lab <- ifelse("name" %in% va,V(N)$name, paste("v",1:n,sep="")) 
+    lab <- if("name" %in% va) V(N)$name else paste("v",1:n,sep="") 
     for(v in V(N)) cat(v,' "',lab[v],'" ',paste(coor[v,],collapse=" "),'\n',sep="",file=paj) 
   }
   va <- setdiff(va,"name")
   cat(ifelse(is_directed(N),"*arcs\n","*edges\n"),file=paj)
   K <- ends(N,E(N),names=FALSE) 
-  w <- ifelse(weight %in% ea,edge_attr(N,weight),rep(1,m))
+  w <- if(weight %in% ea) edge_attr(N,weight) else rep(1,m)
   if(ecolor %in% ea){ C <- edge_attr(N,ecolor)
     for(e in 1:m) cat(K[e,1]," ",K[e,2]," ",w[e]," c ",as.character(C[e]),"\n",sep="",file=paj)
   } else 
