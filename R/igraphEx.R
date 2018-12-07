@@ -34,7 +34,7 @@ write.graph.paj <- function(N,file="test.paj",vname="name",coor=NULL,va=NULL,ea=
   ea <- setdiff(ea,c(weight,ecolor)); nr <- 1
   for(a in ea){nr <- nr+1; w <- edge_attr(N,a)
     cat(ifelse(is_directed(N),"*arcs","*edges"),file=paj)
-    cat(":",nr,' "',a,'"\n',sep="",file=paj)
+    cat(" :",nr,' "',a,'"\n',sep="",file=paj)
     if(is.numeric(w)){
       for(e in 1:m) cat(K[e,1]," ",K[e,2]," ",w[e],"\n",sep="",file=paj)
     } else if(is.character(w)){ 
