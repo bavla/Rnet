@@ -13,7 +13,7 @@ write.graph.paj <- function(N,file="test.paj",vname="name",coor=NULL,va=NULL,ea=
   if(is.null(ea)) ea <- edge_attr_names(N)
   va <- union(va,vname); ea <- union(ea,weight)
   paj <- file(file,"w")
-  cat("*network test\n",file=paj)
+  cat("*network",file,"\n",file=paj)
   cat("% saved from igraph ",format(Sys.time(), "%a %b %d %X %Y"),"\n",sep="",file=paj)
   for(a in ga) cat("% ",a,": ",graph_attr(N,a),"\n",sep="",file=paj)
   cat('*vertices ',n,'\n',file=paj)
@@ -60,7 +60,7 @@ write.graph.paj <- function(N,file="test.paj",vname="name",coor=NULL,va=NULL,ea=
   close(paj)
 }
 
-# source("https://raw.githubusercontent.com/bavla/Rnet/master/R/igraphEx.R")
+# source("https://raw.githubusercontent.com/bavla/Rnet/master/R/igraph+.R")
 
 # https://lists.nongnu.org/archive/html/igraph-help/2013-07/msg00085.html
 graph.reverse <- function (graph) {
