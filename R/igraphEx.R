@@ -2,25 +2,28 @@
 # extensions to igraph
 # by Vladimir Batagelj, December 2018
 
+empty <- character(0)
+
 normalize <- function(x,marg=0) return ((1-2*marg)*(x-min(x))/(max(x)-min(x))+marg)
 
-write.graph.paj <- function(N,file="test.paj",coor=NULL,va=NULL,ea=NULL,
+write.graph.paj <- function(N,file="test.paj",vname="name",coor=NULL,va=NULL,ea=NULL,
   weight="weight",ecolor="color"){
   n <- gorder(N); m <- gsize(N); ga <- graph_attr_names(N)
   if(is.null(va)) va <- vertex_attr_names(N)
   if(is.null(ea)) ea <- edge_attr_names(N)
+  va <- union(va,vname); ea <- union(ea,weight)
   paj <- file(file,"w")
   cat("*network test\n",file=paj)
   cat("% saved from igraph ",format(Sys.time(), "%a %b %d %X %Y"),"\n",sep="",file=paj)
   for(a in ga) cat("% ",a,": ",graph_attr(N,a),"\n",sep="",file=paj)
   cat('*vertices ',n,'\n',file=paj)
+  lab <- if(vname %in% va) vertex_attr(N,vname) else paste("v",1:n,sep="") 
   if(is.null(coor)){  
-    if("name" %in% va) for(v in V(N)) cat(v,' "',V(N)$name[v],'"\n',sep="",file=paj)
+    if(vname %in% va) for(v in V(N)) cat(v,' "',lab[v],'"\n',sep="",file=paj)
   } else { 
-    lab <- if("name" %in% va) V(N)$name else paste("v",1:n,sep="") 
     for(v in V(N)) cat(v,' "',lab[v],'" ',paste(coor[v,],collapse=" "),'\n',sep="",file=paj) 
   }
-  va <- setdiff(va,"name")
+  va <- setdiff(va,vname)
   cat(ifelse(is_directed(N),"*arcs\n","*edges\n"),file=paj)
   K <- ends(N,E(N),names=FALSE) 
   w <- if(weight %in% ea) edge_attr(N,weight) else rep(1,m)
@@ -32,7 +35,13 @@ write.graph.paj <- function(N,file="test.paj",coor=NULL,va=NULL,ea=NULL,
   for(a in ea){nr <- nr+1; w <- edge_attr(N,a)
     cat(ifelse(is_directed(N),"*arcs","*edges"),file=paj)
     cat(":",nr,' "',a,'"\n',sep="",file=paj)
-    for(e in 1:m) cat(K[e,1]," ",K[e,2]," ",w[e],"\n",sep="",file=paj)
+    if(is.numeric(w)){
+      for(e in 1:m) cat(K[e,1]," ",K[e,2]," ",w[e],"\n",sep="",file=paj)
+    } else if(is.character(w)){ 
+      W <- factor(w); lev <- levels(W)
+      for(i in seq_along(lev)) cat("%",i,"-",lev[i],"\n",file=paj)
+      for(e in 1:m) cat(K[e,1]," ",K[e,2]," ",W[e],' l "',w[e],'"\n',sep="",file=paj)
+    } else warning(paste("unsupported type of",a),call.=FALSE)
   }
   cat("\n",file=paj)
   for(a in va){
@@ -45,7 +54,8 @@ write.graph.paj <- function(N,file="test.paj",coor=NULL,va=NULL,ea=NULL,
       s <- S; cat("*vector ",a,"\n",sep="",file=paj) 
     } else {warning(paste("unsupported type of",a),call.=FALSE); ok <- FALSE}
     if(ok){cat('*vertices ',n,'\n',file=paj)
-      for(v in 1:n) cat(s[v],"\n",file=paj) }
+      for(v in 1:n) cat(s[v],"\n",file=paj)
+      cat("\n",file=paj) }
   }
   close(paj)
 }
