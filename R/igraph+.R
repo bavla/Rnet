@@ -69,29 +69,34 @@ write.graph.paj <- function(N,file="test.paj",vname="name",coor=NULL,va=NULL,ea=
 library(igraph)
 library(rjson)
 
-write.graph.netJSON <- function(N,file="test.json" ){
+write.graph.netJSON <- function(N,file="test.json",vname="name" ){
   n <- gorder(N); m <- gsize(N); dir <- is_directed(N)
   lType <- ifelse(dir,"arc","edge")
-  vlab <- vertex_attr(N,"name")
+  va <- vertex_attr_names(N); ea <- edge_attr_names(N)
+  vlab <- if(vname %in% va) vertex_attr(N,vname) else paste("v",1:n,sep="")
+  va <- setdiff(va,vname)  
   nods <- vector('list',n); lnks <- vector('list',m)
   today <- format(Sys.time(), "%a %b %d %X %Y")
-  for(i in 1:n) nods[[i]] <- list(id=i,name=vlab[i])
-# nods[[i]] <- list(id=i,name=nodes$name[i],mode=M[i],
-  for(i in 1:m) {uv <- ends(N,i,names=FALSE); u <- uv[1]; v <- uv[2];
-    lnks[[i]] <- list(id=i,type=lType,n1=u,n2=v,weight=1)}
+  for(i in 1:n) { L <- list(id=i,name=vlab[i]) 
+    for(a in va) L[[a]] <- vertex_attr(N,a)[i]
+    nods[[i]] <- L }
+  for(i in 1:m) {uv <- ends(N,i,names=FALSE); u <- uv[1]; v <- uv[2]
+    L <- list(id=i,type=lType,n1=u,n2=v)
+    for(a in ea) L[[a]] <- edge_attr(N,a)[i]
+    lnks[[i]] <- L }
   meta <- list(date=today,title="saved from igraph")
-  leg <- list(mode="mod",sex="sx",rel="rel")
+#  leg <- list(mode="mod",sex="sx",rel="rel")
   inf <- graph_attr(N)
   if("name" %in% names(inf)) {inf["title"] <- inf$name; inf[["name"]] <- NULL}
-  inf["network"] <- "bib"; inf["org"] <- 1
-  inf["nNodes"] <- n; 
+  inf["org"] <- 1;  inf["nNodes"] <- n; #   inf["network"] <- "bib"; 
   if(dir) {inf["nArcs"] <- m; inf["nEdges"] <- 0} else {inf["nArcs"] <- 0; inf["nEdges"] <- m}
-  inf[["legend"]] <- leg; 
+#  inf[["legend"]] <- leg; 
   if("meta" %in% names(inf)) { k <- length(inf[["meta"]]); inf[["meta"]][[k+1]] <- meta
   } else inf[["meta"]] <- meta
   data <- list(netJSON="basic",info=inf,nodes=nods,links=lnks)
   json <- file(file,"w"); cat(toJSON(data),file=json); close(json)
 }
+
 
 # https://lists.nongnu.org/archive/html/igraph-help/2013-07/msg00085.html
 graph.reverse <- function (graph) {
