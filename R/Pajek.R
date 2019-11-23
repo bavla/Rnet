@@ -1,13 +1,16 @@
+%
+% Pajek.R
+% reading and saving of Pajek data in R (matrices and vectors)
+%
+% by Vladimir Batagelj, November 2019
+%
 
 
-
-
-
-read_Pajek_clu <- function(f,skip=1){
+clu2vector <- function(f,skip=1){
   read.table(f,skip=skip,colClasses=c("integer"),header=FALSE)$V1
 }
 
-read_Pajek_vec <- function(f,skip=1){
+vec2vector <- function(f,skip=1){
   read.table(f,skip=skip,colClasses=c("numeric"),header=FALSE)$V1
 }
 
