@@ -62,14 +62,14 @@ write.graph.paj <- function(N,file="test.paj",vname="name",coor=NULL,va=NULL,ea=
   close(paj)
 }
 
-# export igraph network in netSON basic format
+# export igraph network in netsJSON basic format
 # by Vladimir Batagelj, December 2018
 # based on transforming CSV files to JSON file, by Vladimir Batagelj, June 2016 
 # setwd("C:/Users/batagelj/Documents/papers/2018/moskva/december/nets")
 library(igraph)
 library(rjson)
 
-write.graph.netJSON <- function(N,file="test.json",vname="name" ){
+write.graph.netsJSON <- function(N,file="test.json",vname="name" ){
   n <- gorder(N); m <- gsize(N); dir <- is_directed(N)
   lType <- ifelse(dir,"arc","edge")
   va <- vertex_attr_names(N); ea <- edge_attr_names(N)
@@ -93,7 +93,7 @@ write.graph.netJSON <- function(N,file="test.json",vname="name" ){
 #  inf[["legend"]] <- leg; 
   if("meta" %in% names(inf)) { k <- length(inf[["meta"]]); inf[["meta"]][[k+1]] <- meta
   } else inf[["meta"]] <- meta
-  data <- list(netJSON="basic",info=inf,nodes=nods,links=lnks)
+  data <- list(netsJSON="basic",info=inf,nodes=nods,links=lnks)
   json <- file(file,"w"); cat(toJSON(data),file=json); close(json)
 }
 
