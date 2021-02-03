@@ -27,11 +27,8 @@ net2matrix <- function(f){
    m1 <- st[2]+1; m2 <- length(L); m <- m2-m1+1
    Q <- strsplit(L[n1:n2],'"'); Nam <- c()
    for(e in Q) Nam <- c(Nam,e[2])
-   if(twomode){
-     rNam <- Nam[1:nr]; cNam <- Nam[(nr+1):n]
-   } else {     
-     rNam <- cNam <- Nam[1:nr]
-   }
+   if(twomode){rNam <- Nam[1:nr]; cNam <- Nam[(nr+1):n]
+   } else {rNam <- cNam <- Nam[1:nr]}
    R <- matrix(data=0,nrow=nr,ncol=nc,dimnames=list(rNam,cNam))
    S <- unlist(strsplit(trimws(L[m1:m2]),'[[:space:]]+'))
    b <- as.integer(S[3*(1:m)-2]); e <- as.integer(S[3*(1:m)-1]); v <- as.numeric(S[3*(1:m)])
