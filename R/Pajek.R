@@ -4,7 +4,7 @@
 #
 # by Vladimir Batagelj, November 2019
 #
-# https://github.com/bavla/cluRC/blob/master/readPajekNet.R
+# source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 #
 
 clu2vector <- function(f,skip=1){
