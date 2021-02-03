@@ -6,7 +6,7 @@
 
 reading and saving of Pajek data in R (matrices and vectors)
 
- https://github.com/bavla/cluRC/blob/master/readPajekNet.R
+ source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 
 
 ### clu2vector(f,skip=1)
