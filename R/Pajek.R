@@ -15,19 +15,28 @@ vec2vector <- function(f,skip=1){
   read.table(f,skip=skip,colClasses=c("numeric"),header=FALSE)$V1
 }
 
-net2matrix <- function(f,skip=0){
-# reads a network from Pajek's net file; skip initial comments lines
+net2matrix <- function(f){
+# reads a network from Pajek's net file; skips initial comments lines
    L <- readLines(f)
    st <- grep("\\*",L)
    S <- unlist(strsplit(trimws(L[st[1]]),'[[:space:]]+'))
+   ls <- length(S); twomode <- ls > 2
+   if(twomode){nr <- as.integer(S[3]); nc <- as.integer(S[2])-nr} else
+     {nr <- nc <- as.integer(S[2])}
    n <- as.integer(S[2]); n1 <- st[1]+1; n2 <- st[2]-1
    m1 <- st[2]+1; m2 <- length(L); m <- m2-m1+1
-   Names <- unlist(strsplit(L[n1:n2],'"'))[2*(1:n)]
-   R <- matrix(data=0,nrow=n,ncol=n,dimnames=list(Names,Names))
+   Q <- strsplit(L[n1:n2],'"'); Nam <- c()
+   for(e in Q) Nam <- c(Nam,e[2])
+   if(twomode){
+     rNam <- Nam[1:nr]; cNam <- Nam[(nr+1):n]
+   } else {     
+     rNam <- cNam <- Nam[1:nr]
+   }
+   R <- matrix(data=0,nrow=nr,ncol=nc,dimnames=list(rNam,cNam))
    S <- unlist(strsplit(trimws(L[m1:m2]),'[[:space:]]+'))
    b <- as.integer(S[3*(1:m)-2]); e <- as.integer(S[3*(1:m)-1]); v <- as.numeric(S[3*(1:m)])
+   if(twomode) e <- e - nr
    for(k in 1:m) R[b[k],e[k]] <- R[b[k],e[k]]+v[k]
-#   rownames(R) <- Names
    return(R)
 }
 
