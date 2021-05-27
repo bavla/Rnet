@@ -53,4 +53,4 @@ saves a links list [(u,v)] or [(u,v,w)]  to Pajek's net file Net
 
 ### CorEu(W,p=1)
 
-Corrected Euckidean distance
+Corrected Euclidean distance
