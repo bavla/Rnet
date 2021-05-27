@@ -88,7 +88,7 @@ vector2vec <- function(X,Vec="Pajek.vec"){
   close(vec)
 }
 
-# Corrected Euckidean distance
+# Corrected Euclidean distance
 CorEu <- function(W,p=1){
   D <- W; diag(D) <- 0; n = nrow(D)
   for(u in 1:(n-1)) for(v in (u+1):n) D[v,u] <- D[u,v] <- 
