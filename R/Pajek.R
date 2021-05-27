@@ -3,6 +3,7 @@
 # reading and saving of Pajek data in R (matrices and vectors)
 #
 # by Vladimir Batagelj, November 2019
+#   May 27, 2021 - added Corrected Euclidean distance
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 #
