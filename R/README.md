@@ -37,16 +37,20 @@ saves a two-mode matrix M to Pajek's net file Net
 saves a links list [(u,v)] or [(u,v,w)]  to Pajek's net file Net
 }
 
-### vector2clu <- function(C,Clu="Pajek.clu"){
+### vector2clu(C,Clu="Pajek.clu")
   n <- length(C); clu <- file(Clu,"w")
   cat("% clu2Pajek",date(),"\n*vertices",n,"\n",file=clu)
   cat(C,sep="\n",file=clu)
   close(clu)
 }
 
-### vector2vec <- function(X,Vec="Pajek.vec"){
+### vector2vec(X,Vec="Pajek.vec")
   n <- length(X); vec <- file(Vec,"w")
   cat("% vec2Pajek",date(),"\n*vertices",n,"\n",file=vec)
   cat(X,sep="\n",file=vec)
   close(vec)
 }
+
+### CorEu(W,p=1)
+
+Corrected Euckidean distance
