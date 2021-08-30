@@ -4,7 +4,7 @@
 #
 # by Vladimir Batagelj, November 2019
 #   May 27, 2021 - added Corrected Euclidean distance
-#   Aug 30, 2021 - added RC2dendro, orDendro, orSize
+#   Aug 30, 2021 - added RC2dendro, orDendro, orSize, derivedTree
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 #
@@ -120,3 +120,18 @@ orDendro <- function(m,i){if(i<0) return(-i)
 orSize <- function(m,i){if(i<0) return(1)
   s[i] <<- orSize(m,m[i,1])+orSize(m,m[i,2])
   return(s[i])}
+
+derivedTree <- function(R,type='rank'){
+  if (type == 'total') { c <- 0; ex <- expression(a+b+R$height[i]) }
+  else if (type == 'count') { c <- 1; ex <- expression(a+b) }
+  else  { c <- 0; ex <- expression(1+max(a,b)) }
+  nm <- length(R$height)
+  h <- rep(c,nm)
+  for (i in 1:nm){
+    j <- R$merge[i,1]; a <- ifelse(j<0,c,h[j])
+    j <- R$merge[i,2]; b <- ifelse(j<0,c,h[j])
+    h[i] <- eval(ex)
+  }
+  return(h)
+}
+
