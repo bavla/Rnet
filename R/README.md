@@ -54,3 +54,5 @@ saves a links list [(u,v)] or [(u,v,w)]  to Pajek's net file Net
 ### CorEu(W,p=1)
 
 Corrected Euclidean distance
+
+http://vladowiki.fmf.uni-lj.si/doku.php?id=notes:clu:cluster
