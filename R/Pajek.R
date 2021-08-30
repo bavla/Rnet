@@ -4,6 +4,7 @@
 #
 # by Vladimir Batagelj, November 2019
 #   May 27, 2021 - added Corrected Euclidean distance
+#   Aug 30, 2021 - added RC2dendro, orDendro, orSize
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 #
@@ -97,3 +98,25 @@ CorEu <- function(W,p=1){
       p*((W[u,u]-W[v,v])**2 + (W[u,v]-W[v,u])**2)) 
   return(D)
 }
+
+RC2dendro <- function(cling){
+  tree <- as.integer(read.csv(cling,header=FALSE,skip=1)$V1)
+  N <- length(tree); n <- (N+1) %/% 2
+  merge <- matrix(0,nrow=(n-1),ncol=2)
+  for(i in 1:n) if(tree[i]>0){
+    k <- tree[i]-n
+    if(merge[k,1]==0) merge[k,1] <- -i else merge[k,2] <- -i
+  }
+  for(i in (n+1):N) if(tree[i]>0){
+    k <- tree[i]-n; j <- i-n
+    if(merge[k,1]==0) merge[k,1] <- j else merge[k,2] <- j
+  }
+  return(list(merge=merge,n=n))
+}
+ 
+orDendro <- function(m,i){if(i<0) return(-i)
+  return(c(orDendro(m,m[i,1]),orDendro(m,m[i,2])))}
+
+orSize <- function(m,i){if(i<0) return(1)
+  s[i] <<- orSize(m,m[i,1])+orSize(m,m[i,2])
+  return(s[i])}
