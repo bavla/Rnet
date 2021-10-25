@@ -58,6 +58,6 @@ References
 > for(i in 1:n) cat(i,' "',N$nodeLabel[i],'" ',N$nodeLong[i],' ',N$nodeLat[i],' 0\n',sep="",file=net)
 > for(i in 1:nrow(R)) cat("*edges :",i,' "',R$layerLabel[i],'"\n',sep="",file=net)
 > cat("*edges\n",file=net)
-> for(i in 1:nrow(L)) cat(L$V1[i],": ",L$V2[i]," ",L$V3[i]," ",L$V4[i],"\n",sep="",file=net)
+> for(i in 1:nrow(L)) cat(L$V1[i],": ",L$V2[i]+1," ",L$V3[i]+1," ",L$V4[i],"\n",sep="",file=net)
 > close(net)
 ```
