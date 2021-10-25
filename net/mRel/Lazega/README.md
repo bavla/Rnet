@@ -4,6 +4,14 @@ The data are available for example at
 - https://manliodedomenico.com/data.php
 - https://www.stats.ox.ac.uk/~snijders/siena/Lazega_lawyers_data.htm
 
+	
+The multirelational social network on 71 nodes consists of 3 relations (Co-work, Friendship and Advice) between partners and associates of a corporate law partnership.
+
+References
+1. Emmanuel Lazega - "The Collegial Phenomenon: The Social Mechanisms of Cooperation Among Peers in a Corporate Law Partnership". Oxford University Press (2001)
+2. Tom A.B. Snijders, Philippa E. Pattison, Garry L. Robins, and Mark S. Handcock - "New specifications for exponential random graph models". Sociological Methodology (2006), 99-153.
+
+
 ## Conversion to Pajek project file
 
 We converted into Pajek format the data from the first source.
