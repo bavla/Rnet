@@ -6,7 +6,7 @@
 - `FAO-trade-2010-SUM.net` - network with merged relations (Sum of weights)
 - `ISO3166-1.txt` - table of ISO_3166-1_alpha-2 country codes
 - `FAO-trade-2010.nam` - Pajek short names file
-- `FAO-PF_1+ln_2.net` - Pathfinder skeleton NET file
+- `FAO-PF_1+ln_2.net` - Pathfinder skeleton NET file (logarithmic weights)
 - `FAO.ini` - Pathfinder skeleton INI file
 - `FAO-PF.svg` - Pathfinder skeleton picture in SVG
 
