@@ -30,6 +30,10 @@ References
 
 ## Conversion to Pajek NET file
 
+The layers labels contain spaces!!!
+
+The node numbers in the list of edges start with 0 !!!
+
 ```
 > wdir <- "D:/vlado/data/multiRel/London_Multiplex_Transport/Dataset"
 > setwd(wdir)
