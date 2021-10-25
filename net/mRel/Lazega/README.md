@@ -5,7 +5,13 @@ The data are available for example at
 - https://www.stats.ox.ac.uk/~snijders/siena/Lazega_lawyers_data.htm
 
 	
-The multirelational social network on 71 nodes consists of 3 relations (Co-work, Friendship and Advice) between partners and associates of a corporate law partnership.
+The multirelational social network on 71 nodes consists of 3 relations (Co-work (1104), Friendship (575), Advice (892)) between partners and associates of a corporate law partnership. Node properties: seniority (years with the firm),
+status (1=partner; 2=associate),
+gender (1=man; 2=woman),
+office (1=Boston; 2=Hartford; 3=Providence),
+age,
+practice (1=litigation; 2=corporate),
+law school (1: harvard, yale; 2: ucon; 3: other).
 
 References
 1. Emmanuel Lazega - "The Collegial Phenomenon: The Social Mechanisms of Cooperation Among Peers in a Corporate Law Partnership". Oxford University Press (2001)
