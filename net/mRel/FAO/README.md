@@ -43,7 +43,7 @@ References
 > close(net)
 ```
 
-## two-letter ISO_3166-1_alpha-2 country codes
+## Two-letter ISO_3166-1_alpha-2 country codes
 
 From
 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
