@@ -1,5 +1,7 @@
 # Lazega Law Firm
 
+https://raw.githubusercontent.com/bavla/Rnet/master/net/mRel/Lazega/Lazega-Law-Firm.paj
+
 The data are available for example at
 - https://manliodedomenico.com/data.php
 - https://www.stats.ox.ac.uk/~snijders/siena/Lazega_lawyers_data.htm
