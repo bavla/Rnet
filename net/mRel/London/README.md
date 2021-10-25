@@ -30,7 +30,7 @@ References
 
 ## Conversion to Pajek NET file
 
-The layers labels contain spaces!!!
+The layer labels contain spaces!!!
 
 The node numbers in the list of edges start with 0 !!!
 
