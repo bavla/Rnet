@@ -11,7 +11,7 @@
 - `FAO-PF.svg` - Pathfinder skeleton picture in SVG
 - `FAO-PF.png` - Pathfinder skeleton picture in PNG
 
-[[https://github.com/bavla/Rnet/blob/master/net/mRel/FAO/FAO-PF.png]]
+![Pathfinder skeleton](https://github.com/bavla/Rnet/blob/master/net/mRel/FAO/FAO-PF.png)
 
 
 ## Description
