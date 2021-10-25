@@ -2,12 +2,15 @@
 
 ## Description
 
+Source file
+- https://manliodedomenico.com/data.php
+
 The multirelational network on 450 nodes and 3588 edges is composed of 37 relations each one corresponding to an airline company operating in Europe.
 
 References
-1. Alessio Cardillo, Jesús Gómez-Gardenes, Massimiliano Zanin, Miguel Romance, David Papo, Francisco del Pozo and Stefano Boccaletti - Emergence of network features from multiplexity. Scientific Reports 3, Article number: 1344 doi:10.1038/srep01344
+1. Alessio Cardillo, Jesús Gómez-Gardenes, Massimiliano Zanin, Miguel Romance, David Papo, Francisco del Pozo and Stefano Boccaletti - Emergence of network features from multiplexity. Scientific Reports 3, Article number: 1344 doi:10.1038/srep01344 ; https://www.nature.com/articles/srep01344
 
-See the official web page for further details.
+See the official web page http://complex.unizar.es/~atnmultiplex/ for further details.
 
 ## Conversion to Pajek NET file
 
