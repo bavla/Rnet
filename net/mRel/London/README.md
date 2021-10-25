@@ -20,6 +20,7 @@ References
 
 1. Manlio De Domenico, Albert Solé-Ribalta, Sergio Gómez, and Alex Arenas, Navigability of interconnected networks under random failures. PNAS 111, 8351-8356 (2014)
 
+![Cut-out](https://github.com/bavla/Rnet/blob/master/net/mRel/London/london.png)
 
 ## Conversion to Pajek NET file
 
