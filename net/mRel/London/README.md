@@ -1,5 +1,9 @@
 # London transport
 
+## To do
+
+Convert data about disruptions into a temporal network.
+
 ## Description
 
 Source https://manliodedomenico.com/data.php
