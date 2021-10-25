@@ -20,7 +20,7 @@ The network on 214 nodes and 318346 edges contains 364 trade relations amoung co
 
 
 References
-1. M. De Domenico, V. Nicosia, A. Arenas, and V. Latora - "Structural reducibility of multilayer networks" - Nature Communications 2015 6, 6864
+1. M. De Domenico, V. Nicosia, A. Arenas, and V. Latora - "Structural reducibility of multilayer networks" - Nature Communications 2015 6, 6864. https://www.nature.com/articles/ncomms7864
  
 
 ## Conversion to Pajek project file
