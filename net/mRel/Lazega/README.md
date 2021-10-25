@@ -1,8 +1,14 @@
 # Lazega Law Firm
 
+The data are available for example at
+- https://manliodedomenico.com/data.php
+- https://www.stats.ox.ac.uk/~snijders/siena/Lazega_lawyers_data.htm
+
+## Conversion to Pajek project file
+
+We converted into Pajek format the data from the first source.
 ```
 > # Lazega-Law-Firm
-> # https://manliodedomenico.com/data.php
 >
 > wdir <- "D:/vlado/data/multiRel/Lazega-Law-Firm_Multiplex_Social/Dataset"
 > setwd(wdir)
@@ -53,4 +59,5 @@
 > vector2clu(N$nodePractice,Clu="practice.clu")
 > vector2clu(N$nodeLawSchool,Clu="lawSchool.clu")
 ```
+To produce the Pajek project file we read all the created files into Pajek and save them as a project file. Finally we add some metadata using a text editor.
 
