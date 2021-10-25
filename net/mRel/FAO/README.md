@@ -1,9 +1,9 @@
-# FAO international trade network 2010
+# FAO international food trade network 2010
 
 The source data are from
 - https://manliodedomenico.com/data.php
 
-The network on 214 nodes and 318346 edges contains 364 trade relations amoung countries, obtained from FAO (Food and Agriculture Organization of the United Nations). The worldwide food import/export network is an economic network in which layers represent products, nodes are countries and edges at each layer represent import/export relationships of a specific food product among countries. We collected the data from FAO and built the multilayer network corresponding to trading in 2010.
+The network on 214 nodes and 318346 edges contains 364 trade relations amoung countries, obtained from FAO (Food and Agriculture Organization of the United Nations). The worldwide food import/export network is an economic network in which relations represent products, nodes are countries and edges in each relation represent import/export relationships of a specific food product among countries. The data were collected from FAO and built the multirelational network corresponding to trading in 2010.
 
 
 References
