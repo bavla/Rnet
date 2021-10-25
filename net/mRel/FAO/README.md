@@ -9,6 +9,8 @@
 - `FAO-PF_1+ln_2.net` - Pathfinder skeleton NET file (logarithmic weights)
 - `FAO.ini` - Pathfinder skeleton INI file
 - `FAO-PF.svg` - Pathfinder skeleton picture in SVG
+- `FAO-PF.png` - Pathfinder skeleton picture in PNG
+
 
 
 ## Description
