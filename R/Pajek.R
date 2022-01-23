@@ -5,9 +5,12 @@
 # by Vladimir Batagelj, November 2019
 #   May 27, 2021 - added Corrected Euclidean distance
 #   Aug 30, 2021 - added RC2dendro, orDendro, orSize, derivedTree, varCutree
+#   Jan 22, 2022 - net2matrix knows *matrix
+#                  uvLab2net saves lists to Pajek
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 #
+
 
 clu2vector <- function(f,skip=1){
   read.table(f,skip=skip,colClasses=c("integer"),header=FALSE)$V1
@@ -17,9 +20,17 @@ vec2vector <- function(f,skip=1){
   read.table(f,skip=skip,colClasses=c("numeric"),header=FALSE)$V1
 }
 
-net2matrix <- function(f){
+net2matrix <- function(f,warn=1){
 # reads a network from Pajek's net file; skips initial comments lines
-   L <- readLines(f)
+# set warn=-1 to suppress warnings
+   defaultW <- getOption("warn"); options(warn=warn)
+   L <- tryCatch(readLines(f,warn=FALSE),
+     error=function(cond) {if(warn>0) message(cond); return(NA)},
+     warning=function(cond) {if(warn>0) message(cond); return(NA)},
+     finally={} )    
+#   L <- readLines(f)
+   options(warn = defaultW)
+   if(is.na(L)) return(NA)
    st <- grep("\\*",L)
    S <- unlist(strsplit(trimws(L[st[1]]),'[[:space:]]+'))
    ls <- length(S); twomode <- ls > 2
@@ -31,11 +42,17 @@ net2matrix <- function(f){
    for(e in Q) Nam <- c(Nam,e[2])
    if(twomode){rNam <- Nam[1:nr]; cNam <- Nam[(nr+1):n]
    } else {rNam <- cNam <- Nam[1:nr]}
-   R <- matrix(data=0,nrow=nr,ncol=nc,dimnames=list(rNam,cNam))
-   S <- unlist(strsplit(trimws(L[m1:m2]),'[[:space:]]+'))
-   b <- as.integer(S[3*(1:m)-2]); e <- as.integer(S[3*(1:m)-1]); v <- as.numeric(S[3*(1:m)])
-   if(twomode) e <- e - nr
-   for(k in 1:m) R[b[k],e[k]] <- R[b[k],e[k]]+v[k]
+   repr <- substr(tolower(L[n2+1]),1,5)
+   if(repr=="*matr"){library(tseries)
+     R <- as.matrix(read.matrix(page,skip=n2+1))
+     dimnames(R) <- list(rNam,cNam)
+   } else {
+     R <- matrix(data=0,nrow=nr,ncol=nc,dimnames=list(rNam,cNam))
+     S <- unlist(strsplit(trimws(L[m1:m2]),'[[:space:]]+'))
+     b <- as.integer(S[3*(1:m)-2]); e <- as.integer(S[3*(1:m)-1]); v <- as.numeric(S[3*(1:m)])
+     if(twomode) e <- e - nr
+     for(k in 1:m) R[b[k],e[k]] <- R[b[k],e[k]]+v[k]
+   }
    return(R)
 }
 
@@ -60,20 +77,30 @@ bimatrix2net <- function(M,Net="Pajek.net"){
   close(net)
 }
 
-uv2net <- function(u,v,w=NULL,Net="Pajek.net",twomode=FALSE){
+uvFac2net <- function(u,v,w=NULL,Net="Pajek.net",twomode=FALSE){
   net <- file(Net,"w")
   if(is.null(w)) w <- rep(1,length(u))
   RN <- levels(u); n <- length(RN)
   if(twomode) {CN <- levels(v);  m <- length(CN)}
   U <- as.integer(u); V <- as.integer(v)
-  if(twomode) cat("% uv2Pajek",date(),"\n*vertices",n+m,n,"\n",file=net) else
-    cat("% uv2Pajek",date(),"\n*vertices",n,"\n",file=net)
+  if(twomode) cat("% uvFac2Pajek",date(),"\n*vertices",n+m,n,"\n",file=net) else
+    cat("% uvFac2Pajek",date(),"\n*vertices",n,"\n",file=net)
   for(i in 1:n) cat(i,' "',RN[i],'"\n',sep="",file=net)
   if(twomode) for(i in 1:m) cat(i+n,' "',CN[i],'"\n',sep="",file=net)
   cat("*arcs\n",file=net)
   for(i in 1:length(u)) cat(U[i],V[i]+twomode*n,w[i],"\n",file=net)
   close(net)
 }
+
+uvLab2net <- function(Lab,U,V,W,Net="Pajek.net",dir=FALSE){
+  net <- file(Net,"w")
+  n <- length(Lab); m <- length(U)
+  cat("% uvLab2net",date(),"\n*vertices",n,"\n",file=net)
+  for(v in 1:n) cat(v,' "',Lab[v],'"\n',sep="",file=net)
+  cat(ifelse(dir,"*arcs\n","*edges\n"),file=net)
+  for(e in 1:m) cat(U[e],V[e],W[e],"\n",file=net)
+  close(net)
+} 
 
 vector2clu <- function(C,Clu="Pajek.clu"){
   n <- length(C); clu <- file(Clu,"w")
