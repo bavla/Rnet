@@ -23,16 +23,16 @@ reads a Pajek's vector file f into vector
 reads a network from Pajek's net file; skips initial comments lines
 
 
-### matrix2net(M,Net="Pajek.net")
+### matrix2net(M,Net="Pajek.net",encoding="UTF-8")
 
 saves a square matrix M to Pajek's net file Net
 
-### bimatrix2net(M,Net="Pajek.net")
+### bimatrix2net(M,Net="Pajek.net",encoding="UTF-8")
 
 saves a two-mode matrix M to Pajek's net file Net
 
 
-### uv2net(u,v,w=NULL,Net="Pajek.net",twomode=FALSE)
+### uv2net(u,v,w=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8")
 
 saves a links list [(u,v)] or [(u,v,w)]  to Pajek's net file Net
 }
