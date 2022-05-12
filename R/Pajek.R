@@ -56,8 +56,8 @@ net2matrix <- function(f,warn=1){
    return(R)
 }
 
-matrix2net <- function(M,Net="Pajek.net"){
-  n <- nrow(M); net <- file(Net,"w")
+matrix2net <- function(M,Net="Pajek.net",encoding="UTF-8"){
+  n <- nrow(M); net <- file(Net,"w",encoding=encoding)
   cat("% mat2Pajek",date(),"\n*vertices",n,"\n",file=net)
   RN <- row.names(M)
   for(v in 1:n) cat(v,' "',RN[v],'"\n',sep="",file=net)
@@ -66,8 +66,8 @@ matrix2net <- function(M,Net="Pajek.net"){
   close(net)
 }
 
-bimatrix2net <- function(M,Net="Pajek.net"){
-  n <- nrow(M); m <- ncol(M); net <- file(Net,"w")
+bimatrix2net <- function(M,Net="Pajek.net",encoding="UTF-8"){
+  n <- nrow(M); m <- ncol(M); net <- file(Net,"w",encoding=encoding)
   cat("% bip2Pajek",date(),"\n*vertices",n+m,n,"\n",file=net)
   RN <- dimnames(M)[[1]]; CN <- dimnames(M)[[2]];
   for(v in 1:n) cat(v,' "',RN[v],'"\n',sep="",file=net)
@@ -77,8 +77,8 @@ bimatrix2net <- function(M,Net="Pajek.net"){
   close(net)
 }
 
-uvFac2net <- function(u,v,w=NULL,Net="Pajek.net",twomode=FALSE){
-  net <- file(Net,"w")
+uvFac2net <- function(u,v,w=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8"){
+  net <- file(Net,"w",encoding=encoding)
   if(is.null(w)) w <- rep(1,length(u))
   RN <- levels(u); n <- length(RN)
   if(twomode) {CN <- levels(v);  m <- length(CN)}
@@ -92,8 +92,8 @@ uvFac2net <- function(u,v,w=NULL,Net="Pajek.net",twomode=FALSE){
   close(net)
 }
 
-uvLab2net <- function(Lab,U,V,W,Net="Pajek.net",dir=FALSE){
-  net <- file(Net,"w")
+uvLab2net <- function(Lab,U,V,W,Net="Pajek.net",dir=FALSE,encoding="UTF-8"){
+  net <- file(Net,"w",encoding=encoding)
   n <- length(Lab); m <- length(U)
   cat("% uvLab2net",date(),"\n*vertices",n,"\n",file=net)
   for(v in 1:n) cat(v,' "',Lab[v],'"\n',sep="",file=net)
