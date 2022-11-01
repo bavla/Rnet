@@ -7,6 +7,7 @@
 #   Aug 30, 2021 - added RC2dendro, orDendro, orSize, derivedTree, varCutree
 #   Jan 22, 2022 - net2matrix knows *matrix
 #                  uvLab2net saves lists to Pajek
+#   Nov  1, 2022 - uvFac2net extended with multi-relations r and time points t
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 #
