@@ -11,49 +11,46 @@ reading and saving of Pajek data in R (matrices and vectors)
 
 ### clu2vector(f,skip=1)
 
-reads a Pajek's clustering file f into vector
+reads a Pajek's clustering file f into a vector.
 
 
 ### vec2vector(f,skip=1)
 
-reads a Pajek's vector file f into vector
+reads a Pajek's vector file f into a vector.
 
 ### net2matrix(f)
 
-reads a network from Pajek's net file; skips initial comments lines
+reads a network from Pajek's net file; skips initial comments lines.
 
 
 ### matrix2net(M,Net="Pajek.net",encoding="UTF-8")
 
-saves a square matrix M to Pajek's net file Net
+saves a square matrix M to a Pajek's net file Net.
 
 ### bimatrix2net(M,Net="Pajek.net",encoding="UTF-8")
 
-saves a two-mode matrix M to Pajek's net file Net
+saves a two-mode matrix M to a Pajek's net file Net.
 
 
 ### uv2net(u,v,w=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8")
 
-saves a links list [(u,v)] or [(u,v,w)]  to Pajek's net file Net
-}
+saves a links list [(u,v)] or [(u,v,w)]  to Pajek's net file Net.
+
 
 ### uvFac2net(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8")
 
 factorize the links list [(u,v)] and saves it  to Pajek's net file Net. If provided, it includes also weights w, relation numbers r, and time points t.
 
 ### vector2clu(C,Clu="Pajek.clu")
-  n <- length(C); clu <- file(Clu,"w")
-  cat("% clu2Pajek",date(),"\n*vertices",n,"\n",file=clu)
-  cat(C,sep="\n",file=clu)
-  close(clu)
-}
+
+saves the integer vector C as a Pajek's partition (clustering).
+
 
 ### vector2vec(X,Vec="Pajek.vec")
-  n <- length(X); vec <- file(Vec,"w")
-  cat("% vec2Pajek",date(),"\n*vertices",n,"\n",file=vec)
-  cat(X,sep="\n",file=vec)
-  close(vec)
-}
+
+saves the numerical vector X as a Pajek's vector.
+
+
 
 ### CorEu(W,p=1)
 
