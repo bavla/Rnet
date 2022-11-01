@@ -37,6 +37,10 @@ saves a two-mode matrix M to Pajek's net file Net
 saves a links list [(u,v)] or [(u,v,w)]  to Pajek's net file Net
 }
 
+### uvFac2net(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8")
+
+factorize the links list [(u,v)] and saves it  to Pajek's net file Net. If provided, it includes also weights w, relation numbers r, and time points t.
+
 ### vector2clu(C,Clu="Pajek.clu")
   n <- length(C); clu <- file(Clu,"w")
   cat("% clu2Pajek",date(),"\n*vertices",n,"\n",file=clu)
