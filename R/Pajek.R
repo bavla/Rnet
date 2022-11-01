@@ -77,7 +77,7 @@ bimatrix2net <- function(M,Net="Pajek.net",encoding="UTF-8"){
   close(net)
 }
 
-uvFac2net <- function(u,v,w=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8"){
+uvFac2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8"){
   net <- file(Net,"w",encoding=encoding)
   if(is.null(w)) w <- rep(1,length(u))
   RN <- levels(u); n <- length(RN)
@@ -88,7 +88,9 @@ uvFac2net <- function(u,v,w=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8")
   for(i in 1:n) cat(i,' "',RN[i],'"\n',sep="",file=net)
   if(twomode) for(i in 1:m) cat(i+n,' "',CN[i],'"\n',sep="",file=net)
   cat("*arcs\n",file=net)
-  for(i in 1:length(u)) cat(U[i],V[i]+twomode*n,w[i],"\n",file=net)
+  for(i in 1:length(u)) cat(ifelse(is.null(r),"",paste(r[i],": ",sep="")),
+    U[i],V[i]+twomode*n,w[i],
+    ifelse(is.null(t),"",paste(" [",t[i],"]",sep="")),"\n",file=net)
   close(net)
 }
 
