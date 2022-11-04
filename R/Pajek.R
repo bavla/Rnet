@@ -103,8 +103,8 @@ uvrwt2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,enc
   RN <- levels(u); n <- length(RN)
   if(twomode) {CN <- levels(v);  m <- length(CN)}
   U <- as.integer(u); V <- as.integer(v)
-  if(twomode) cat("% uvFac2Pajek",date(),"\n*vertices",n+m,n,"\n",file=net) else
-    cat("% uvFac2Pajek",date(),"\n*vertices",n,"\n",file=net)
+  if(twomode) cat("% uvrwt2Pajek",date(),"\n*vertices",n+m,n,"\n",file=net) else
+    cat("% uvrwt2Pajek",date(),"\n*vertices",n,"\n",file=net)
   for(i in 1:n) cat(i,' "',RN[i],'"\n',sep="",file=net)
   if(twomode) for(i in 1:m) cat(i+n,' "',CN[i],'"\n',sep="",file=net)
   if(!is.null(r)){ RR <- levels(r)
