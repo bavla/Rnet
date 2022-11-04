@@ -8,6 +8,7 @@
 #   Jan 22, 2022 - net2matrix knows *matrix
 #                  uvLab2net saves lists to Pajek
 #   Nov  1, 2022 - uvFac2net extended with multi-relations r and time points t
+#   Nov  4, 2022 - uvrwt2net a version of uvFac2net with internal factorization
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 #
