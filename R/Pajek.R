@@ -99,12 +99,13 @@ uvFac2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,enc
 uvrwt2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8"){
   net <- file(Net,"w",encoding=encoding)
   if(is.null(w)) w <- rep(1,length(u))
-  u <- factor(u); v <- factor(v); 
-  RN <- levels(u); n <- length(RN)
-  if(twomode) {CN <- levels(v);  m <- length(CN)}
+  if(twomode) {u <- factor(u); v <- factor(v); RN <- levels(u);
+    CN <- levels(v);  m <- length(CN)} else
+  {RN <- levels(factor(c(u,v))); u <- factor(u,levels=RN); v <- factor(v,levels=RN) }
+  n <- length(RN)
   U <- as.integer(u); V <- as.integer(v)
   if(twomode) cat("% uvrwt2Pajek",date(),"\n*vertices",n+m,n,"\n",file=net) else
-    cat("% uvFac2Pajek",date(),"\n*vertices",n,"\n",file=net)
+    cat("% uvrwt2Pajek",date(),"\n*vertices",n,"\n",file=net)
   for(i in 1:n) cat(i,' "',RN[i],'"\n',sep="",file=net)
   if(twomode) for(i in 1:m) cat(i+n,' "',CN[i],'"\n',sep="",file=net)
   if(!is.null(r)){r <- factor(r); RR <- levels(r)
