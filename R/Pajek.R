@@ -89,8 +89,8 @@ uvFac2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,enc
     cat("% uvFac2Pajek",date(),"\n*vertices",n,"\n",file=net)
   for(i in 1:n) cat(i,' "',RN[i],'"\n',sep="",file=net)
   if(twomode) for(i in 1:m) cat(i+n,' "',CN[i],'"\n',sep="",file=net)
-  if(!is.null(r)){R <- as.integer(r); N <- levels(r); cat("% relations: ",file=net)
-    cat(paste(paste(1:length(N),N,sep=": "),collapse=", "),"\n",file=net)}
+  if(!is.null(r)){R <- as.integer(r); N <- levels(r)
+    for(i in 1:length(N)) cat("*arcs :",i,' "',N[i],'"\n',sep="",file=net)}
   cat("*arcs\n",file=net)
   for(i in 1:length(u)) cat(ifelse(is.null(r),"",paste(R[i],": ",sep="")),
     U[i],V[i]+twomode*n,w[i],
