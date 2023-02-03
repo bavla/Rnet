@@ -70,7 +70,8 @@ Transforming Pajek's hierarchical clusterings into R's.
 
 ### derivedTree(R,type='rank')
 
-type in { 'rank', 'total', 'count' }
+Transforms an R clustering into the corresponding "balanced" version -
+type in { 'rank', 'total', 'count' }.
 
 ### varCutree(R,var,vmin,vmax)
 
