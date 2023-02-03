@@ -75,3 +75,4 @@ type in { 'rank', 'total', 'count' }.
 
 ### varCutree(R,var,vmin,vmax)
 
+Alternative cutting of clusters.
