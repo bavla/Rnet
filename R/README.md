@@ -41,6 +41,8 @@ saves a links list [(u,v)] or [(u,v,w)]  to Pajek's net file Net.
 
 factorized link start and end vectors u and v  saves to Pajek's net file Net. If provided, it includes also weights w, relation numbers r, and time points t.
 
+### uvrwt2net(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8")
+
 ### vector2clu(C,Clu="Pajek.clu")
 
 saves the integer vector C as a Pajek's partition (clustering).
@@ -57,3 +59,16 @@ saves the numerical vector X as a Pajek's vector.
 Corrected Euclidean distance
 
 http://vladowiki.fmf.uni-lj.si/doku.php?id=notes:clu:cluster
+
+### RC2dendro(C)
+
+### orDendro(m,i)
+
+### orSize(m,i) 
+
+### derivedTree(R,type='rank')
+
+type in { 'rank', 'total', 'count' }
+
+### varCutree(R,var,vmin,vmax)
+
