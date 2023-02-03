@@ -39,7 +39,7 @@ saves a links list [(u,v)] or [(u,v,w)]  to Pajek's net file Net.
 
 ### uvFac2net(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8")
 
-factorize the links list [(u,v)] and saves it  to Pajek's net file Net. If provided, it includes also weights w, relation numbers r, and time points t.
+factorized link start and end vectors u and v  saves to Pajek's net file Net. If provided, it includes also weights w, relation numbers r, and time points t.
 
 ### vector2clu(C,Clu="Pajek.clu")
 
