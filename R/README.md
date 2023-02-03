@@ -62,6 +62,8 @@ http://vladowiki.fmf.uni-lj.si/doku.php?id=notes:clu:cluster
 
 ### RC2dendro(C)
 
+Transforming Pajek's hierarchical clusterings into R's.
+
 ### orDendro(m,i)
 
 ### orSize(m,i) 
