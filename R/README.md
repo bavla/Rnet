@@ -43,6 +43,8 @@ factorized link start and end vectors u and v  saves to Pajek's net file Net. If
 
 ### uvrwt2net(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8")
 
+### uvLab2net(Lab,U,V,W,Net="Pajek.net",dir=FALSE,encoding="UTF-8")
+
 ### vector2clu(C,Clu="Pajek.clu")
 
 saves the integer vector C as a Pajek's partition (clustering).
