@@ -215,3 +215,19 @@ varCutree <- function(R,var,vmin,vmax){
   }  
   return(list(part=part,value=value))
 }
+
+sp2Pajek <- function(sp,file="neighbors.net",name=0,queen=TRUE,BOM=TRUE){
+  library(spdep)
+  nbs <- poly2nb(sp,queen=queen)
+  n <- length(nbs); L <- card(nbs)
+  xy <- coordinates(sp)
+  IDs <- as.character(if(name>0) sp[[name]] else 1:n)
+  net <- file(file,"w")
+  if(BOM) writeChar("\ufeff",net,eos=NULL) 
+  cat("% sp2Pajek:",date(),"\n*vertices",n,"\n",file=net)
+  for(i in 1:n) cat(i,' "',IDs[i],'" ',xy[i,1],' ',xy[i,2],' 0.5\n',sep='',file=net)
+  cat("*edgeslist\n",file=net)
+  for(i in 1:n) if(L[i]>0) cat(i,nbs[[i]],"\n",file=net)
+  close(net)
+}
+  
