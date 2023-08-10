@@ -9,6 +9,7 @@
 #                  uvLab2net saves lists to Pajek
 #   Nov  1, 2022 - uvFac2net extended with multi-relations r and time points t
 #   Nov  4, 2022 - uvrwt2net a version of uvFac2net with internal factorization
+#   Aug 10, 2023 - uvLab2net extended with time
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 #
