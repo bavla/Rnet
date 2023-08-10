@@ -120,13 +120,14 @@ uvrwt2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,enc
   close(net)
 }
 
-uvLab2net <- function(Lab,U,V,W,Net="Pajek.net",dir=FALSE,encoding="UTF-8"){
+uvLab2net <- function(Lab,U,V,W,t=NULL,Net="Pajek.net",dir=FALSE,encoding="UTF-8"){
   net <- file(Net,"w",encoding=encoding)
-  n <- length(Lab); m <- length(U)
+  n <- length(Lab); m <- length(U); time <- !is.null(t)
+  if(time){tmin <- min(t); tmax <- max(t); tin <- paste('" [',tmin,"-",tmax,"]",sep="")}
   cat("% uvLab2net",date(),"\n*vertices",n,"\n",file=net)
-  for(v in 1:n) cat(v,' "',Lab[v],'"\n',sep="",file=net)
+  for(v in 1:n) cat(v,' "',Lab[v],ifelse(time,tin,'"'),'\n',sep="",file=net)
   cat(ifelse(dir,"*arcs\n","*edges\n"),file=net)
-  for(e in 1:m) cat(U[e],V[e],W[e],"\n",file=net)
+  for(e in 1:m) cat(U[e],V[e],W[e],ifelse(time,paste(" [",t[e],"]"),""),"\n",file=net)
   close(net)
 } 
 
