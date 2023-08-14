@@ -33,7 +33,7 @@ net2matrix <- function(f,warn=1){
      finally={} )    
 #   L <- readLines(f)
    options(warn = defaultW)
-   if(is.na(L)) return(NA)
+   if(is.na(L[1])) return(NA)
    st <- grep("\\*",L)
    S <- unlist(strsplit(trimws(L[st[1]]),'[[:space:]]+'))
    ls <- length(S); twomode <- ls > 2
