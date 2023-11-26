@@ -99,25 +99,28 @@ uvFac2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,enc
   close(net)
 }
 
-uvrwt2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8"){
+uvrwt2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",
+  twomode=FALSE,directed=TRUE,encoding="UTF-8"){
+  tint <- function(sf,i){ts <- as.integer(sf[i,1]); tf <- as.integer(sf[i,2])
+    ifelse(ts==tf,ts,paste(ts,"-",tf,sep=""))}
   net <- file(Net,"w",encoding=encoding)
   if(is.null(w)) w <- rep(1,length(u))
   if(twomode) {u <- factor(u); v <- factor(v); RN <- levels(u);
     CN <- levels(v);  m <- length(CN)} else
   {RN <- levels(factor(c(u,v))); u <- factor(u,levels=RN); v <- factor(v,levels=RN) }
-  n <- length(RN)
+  n <- length(RN); links <- ifelse(directed,"*arcs","*edges")
   U <- as.integer(u); V <- as.integer(v)
   if(twomode) cat("% uvrwt2Pajek",date(),"\n*vertices",n+m,n,"\n",file=net) else
     cat("% uvrwt2Pajek",date(),"\n*vertices",n,"\n",file=net)
   for(i in 1:n) cat(i,' "',RN[i],'"\n',sep="",file=net)
   if(twomode) for(i in 1:m) cat(i+n,' "',CN[i],'"\n',sep="",file=net)
   if(!is.null(r)){r <- factor(r); RR <- levels(r)
-    for(i in 1:length(RR)) cat("*arcs :",i,' "',RR[i],'"\n',sep="",file=net)
+    for(i in 1:length(RR)) cat(links," :",i,' "',RR[i],'"\n',sep="",file=net)
   }
-  cat("*arcs\n",file=net)
+  cat(links,"\n",sep="",file=net)
   for(i in 1:length(u)) cat(ifelse(is.null(r),"",paste(as.integer(r)[i],": ",sep="")),
     U[i],V[i]+twomode*n,w[i],
-    ifelse(is.null(t),"",paste(" [",t[i],"]",sep="")),"\n",file=net)
+    ifelse(is.null(t),"",paste(" [",tint(t,i),"]",sep="")),"\n",file=net)
   close(net)
 }
 
