@@ -62,6 +62,7 @@ net2matrix <- function(f,warn=1){
 
 matrix2net <- function(M,Net="Pajek.net",encoding="UTF-8"){
   n <- nrow(M); net <- file(Net,"w",encoding=encoding)
+  if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=net)
   cat("% mat2Pajek",date(),"\n*vertices",n,"\n",file=net)
   RN <- row.names(M)
   for(v in 1:n) cat(v,' "',RN[v],'"\n',sep="",file=net)
@@ -72,6 +73,7 @@ matrix2net <- function(M,Net="Pajek.net",encoding="UTF-8"){
 
 bimatrix2net <- function(M,Net="Pajek.net",encoding="UTF-8"){
   n <- nrow(M); m <- ncol(M); net <- file(Net,"w",encoding=encoding)
+  if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=net)
   cat("% bip2Pajek",date(),"\n*vertices",n+m,n,"\n",file=net)
   RN <- dimnames(M)[[1]]; CN <- dimnames(M)[[2]];
   for(v in 1:n) cat(v,' "',RN[v],'"\n',sep="",file=net)
@@ -83,6 +85,7 @@ bimatrix2net <- function(M,Net="Pajek.net",encoding="UTF-8"){
 
 uvFac2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8"){
   net <- file(Net,"w",encoding=encoding)
+  if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=net)
   if(is.null(w)) w <- rep(1,length(u))
   RN <- levels(u); n <- length(RN)
   if(twomode) {CN <- levels(v);  m <- length(CN)}
@@ -105,6 +108,7 @@ uvrwt2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",
   tint <- function(sf,i){ts <- as.integer(sf[i,1]); tf <- as.integer(sf[i,2])
     ifelse(ts==tf,ts,paste(ts,"-",tf,sep=""))}
   net <- file(Net,"w",encoding=encoding)
+  if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=net)
   if(is.null(w)) w <- rep(1,length(u))
   if(twomode) {u <- factor(u); v <- factor(v); RN <- levels(u);
     CN <- levels(v);  m <- length(CN)} else
@@ -127,6 +131,7 @@ uvrwt2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",
 
 uvLab2net <- function(Lab,U,V,W,t=NULL,Net="Pajek.net",dir=FALSE,encoding="UTF-8"){
   net <- file(Net,"w",encoding=encoding)
+  if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=net)
   n <- length(Lab); m <- length(U); time <- !is.null(t)
   if(time){tmin <- min(t); tmax <- max(t); tin <- paste('" [',tmin,"-",tmax,"]",sep="")}
   cat("% uvLab2net",date(),"\n*vertices",n,"\n",file=net)
