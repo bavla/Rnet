@@ -11,6 +11,7 @@
 #   Nov  4, 2022 - uvrwt2net a version of uvFac2net with internal factorization
 #   Aug 10, 2023 - uvLab2net extended with time
 #   Nov 26, 2023 - uvrwt2net extended with directed and time intervals
+#   Feb  7, 2024 - vecnom2clu nominal variable to partition with legend
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 #
@@ -144,6 +145,17 @@ uvLab2net <- function(Lab,U,V,W,t=NULL,Net="Pajek.net",dir=FALSE,encoding="UTF-8
 vector2clu <- function(C,Clu="Pajek.clu"){
   n <- length(C); clu <- file(Clu,"w")
   cat("% clu2Pajek",date(),"\n*vertices",n,"\n",file=clu)
+  cat(C,sep="\n",file=clu)
+  close(clu)
+}
+
+vecnom2clu <- function(N,Clu="Pajek.clu",encoding="UTF-8"){
+  n <- length(N); clu <- file(Clu,"w",encoding=encoding)
+  if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=clu)
+  C <- factor(N); L <- levels(C) 
+  cat("% nom2Pajek",date(),"\n%",
+    paste(1:length(L),": ",L,collapse="; ",sep=""),
+    "\n*vertices",n,"\n",file=clu)
   cat(C,sep="\n",file=clu)
   close(clu)
 }
