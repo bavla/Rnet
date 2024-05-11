@@ -149,10 +149,10 @@ vector2clu <- function(C,Clu="Pajek.clu"){
   close(clu)
 }
 
-vecnom2clu <- function(N,Clu="Pajek.clu",encoding="UTF-8"){
+vecnom2clu <- function(N,Clu="Pajek.clu",na=0,encoding="UTF-8"){
   n <- length(N); clu <- file(Clu,"w",encoding=encoding)
   if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=clu)
-  C <- factor(N); L <- levels(C) 
+  C <- factor(N); L <- levels(C);  C <- as.integer(C); C[is.na(C)] <- na 
   cat("% nom2Pajek",date(),"\n%",
     paste(1:length(L),": ",L,collapse="; ",sep=""),
     "\n*vertices",n,"\n",file=clu)
