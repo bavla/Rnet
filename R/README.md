@@ -49,6 +49,9 @@ factorized link start and end vectors u and v  saves to Pajek's net file Net. If
 
 saves the integer vector C as a Pajek's partition (clustering).
 
+### vecnom2clu(N,Clu="Pajek.clu",na=0,encoding="UTF-8")
+
+saves the nominal vector N as a Pajek's partition (clustering) with the legend.
 
 ### vector2vec(X,Vec="Pajek.vec")
 
