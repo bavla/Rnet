@@ -12,10 +12,26 @@
 #   Aug 10, 2023 - uvLab2net extended with time
 #   Nov 26, 2023 - uvrwt2net extended with directed and time intervals
 #   Feb  7, 2024 - vecnom2clu nominal variable to partition with legend
+ž   Jun 29, 2024 - unescape_html, nNodes 
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 #
 
+# https://stackoverflow.com/questions/5060076/convert-html-character-entity-encoding-in-r
+unescape_html <- function(str){
+  xml2::xml_text(xml2::read_html(paste0("<x>", str, "</x>")))
+}
+
+nNodes <- function(netF){ 
+  net <- file(netF,"r")
+  line <- readLines(net,n=1); n <- 1
+  while(substr(line,1,1)!="*") {line <- readLines(net,n=1); n <- n+1}
+  S <- unlist(strsplit(line," "))
+  if(length(S)>2) {n1 <- as.integer(S[3]); n2 <- as.integer(S[2])-n1} else {
+    n1 <- as.integer(S[2]); n2 <- 0}
+  close(net)
+  return(c(n1,n2,n))
+}
 
 clu2vector <- function(f,skip=1){
   read.table(f,skip=skip,colClasses=c("integer"),header=FALSE)$V1
@@ -253,4 +269,31 @@ sp2Pajek <- function(sp,file="neighbors.net",name=0,queen=TRUE,BOM=TRUE){
   for(i in 1:n) if(L[i]>0) cat(i,nbs[[i]],"\n",file=net)
   close(net)
 }
-  
+ 
+listTitles <- function(resF,win){
+  nn <- nNodes(resF); q <- nn[1]; skip <- nn[3]
+  Q <- read.table(resF,skip=skip,nrows=q)$V2
+  P <- gsub("=","",unname(Vectorize(unescape_html)(Q)))
+  s <- match(P,win$wnam)
+  wIDs <- win[s,]$wID; wNams <- win[s,]$wnam
+  n <- length(wIDs); step <- 100; D <- NULL
+  first <- 1; last <- min(step,n)
+  Q1 <- "https://api.openalex.org/works?filter=openalex:"
+  Q3 <- "&select=id,publication_year,display_name&per_page=200"
+  while(TRUE){
+    works <- paste(wIDs[first:last],collapse="|")
+    S <- GET(paste0(Q1,works,Q3))
+    C <- fromJSON(rawToChar(S$content))
+    R <- data.frame(wID=unname(Vectorize(getID)(C$results$id)),tit=C$results$display_name,
+      py=C$results$publication_year)
+    if(is.null(D)) D <- R else D <- rbind(D,R)
+    first <- last+1
+    if(first>n) break
+    last <- min(last+step,n)
+  }
+  R <- D[match(wIDs,D$wID),]
+  D <- data.frame(wID=R$wID,wnam=wNams,py=R$py,tit=R$tit)
+  return(D)
+}
+
+ 
