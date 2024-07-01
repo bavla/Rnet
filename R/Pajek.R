@@ -269,6 +269,16 @@ sp2Pajek <- function(sp,file="neighbors.net",name=0,queen=TRUE,BOM=TRUE){
   for(i in 1:n) if(L[i]>0) cat(i,nbs[[i]],"\n",file=net)
   close(net)
 }
+
+idNamesTab <- function(netF,namF){
+  E <- nNodes(netF); A <- nNodes(namF)
+  ne <- E[1]; na <- A[1]
+  if(ne!=na) stop("files with same number of nodes required") 
+  N <- read.table(namF,skip=A[3])
+  W <- read.table(netF,skip=E[3],nrows=nrow(N))
+  win <- data.frame(ind=N$V1,wID=W$V2,wnam=N$V2)
+  return(win)
+}
  
 listTitles <- function(resF,win){
   nn <- nNodes(resF); q <- nn[1]; skip <- nn[3]
