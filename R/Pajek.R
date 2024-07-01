@@ -12,7 +12,7 @@
 #   Aug 10, 2023 - uvLab2net extended with time
 #   Nov 26, 2023 - uvrwt2net extended with directed and time intervals
 #   Feb  7, 2024 - vecnom2clu nominal variable to partition with legend
-ž   Jun 29, 2024 - unescape_html, nNodes 
+#   Jun 29, 2024 - unescape_html, nNodes, idNamesTab, listTitles 
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 #
