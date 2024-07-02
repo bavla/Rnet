@@ -15,6 +15,7 @@
 #   Jun 29, 2024 - unescape_html, nNodes, idNamesTab, listTitles 
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
+# http://localhost:8800/doku.php?id=work:bib:alex:lst
 #
 
 # https://stackoverflow.com/questions/5060076/convert-html-character-entity-encoding-in-r
