@@ -31,7 +31,7 @@ saves a square matrix M to a Pajek's net file Net.
 
 saves a two-mode matrix M to a Pajek's net file Net.
 
-
+!!! ???? preveri
 ### uv2net(u,v,w=NULL,Net="Pajek.net",twomode=FALSE,encoding="UTF-8")
 
 saves a links list [(u,v)] or [(u,v,w)]  to Pajek's net file Net.
