@@ -78,14 +78,16 @@ net2matrix <- function(f,warn=1){
    return(R)
 }
 
-matrix2net <- function(M,Net="Pajek.net",encoding="UTF-8"){
+matrix2net <- function(M,Net="Pajek.net",encoding="UTF-8",nolink=0){
   n <- nrow(M); net <- file(Net,"w",encoding=encoding)
+  testNA <- is.na(nolink)
   if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=net)
   cat("% mat2Pajek",date(),"\n*vertices",n,"\n",file=net)
   RN <- row.names(M)
   for(v in 1:n) cat(v,' "',RN[v],'"\n',sep="",file=net)
   cat("*arcs\n",file=net)
-  for(v in 1:n) for(u in 1:n) if(M[v,u]!=0) cat(v,u,M[v,u],"\n",file=net)
+  for(v in 1:n) for(u in 1:n) { test <- if(testNA) !is.na(M[v,u]) else M[v,u]!=nolink;
+    if(test) cat(v,u,M[v,u],"\n",file=net)}
   close(net)
 }
 
