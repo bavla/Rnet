@@ -23,7 +23,7 @@ reads a Pajek's vector file f into a vector.
 reads a network from Pajek's net file; skips initial comments lines.
 
 
-### matrix2net(M,Net="Pajek.net",encoding="UTF-8")
+### matrix2net(M,Net="Pajek.net",encoding="UTF-8",nolink=0)
 
 saves a square matrix M to a Pajek's net file Net.
 
