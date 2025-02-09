@@ -18,7 +18,7 @@ reads a Pajek's clustering file f into a vector.
 
 reads a Pajek's vector file f into a vector.
 
-### net2matrix(f)
+### net2matrix(f,nolink=0)
 
 reads a network from Pajek's net file; skips initial comments lines.
 
