@@ -13,6 +13,7 @@
 #   Nov 26, 2023 - uvrwt2net extended with directed and time intervals
 #   Feb  7, 2024 - vecnom2clu nominal variable to partition with legend
 #   Jun 29, 2024 - unescape_html, nNodes, idNamesTab, listTitles 
+#   Feb  9, 2025 - net2matrix, matrix2net / nolink
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 # http://localhost:8800/doku.php?id=work:bib:alex:lst
@@ -42,7 +43,7 @@ vec2vector <- function(f,skip=1){
   read.table(f,skip=skip,colClasses=c("numeric"),header=FALSE)$V1
 }
 
-net2matrix <- function(f,warn=1){
+net2matrix <- function(f,warn=1,nolink=0){
 # reads a network from Pajek's net file; skips initial comments lines
 # set warn=-1 to suppress warnings
    defaultW <- getOption("warn"); options(warn=warn)
@@ -69,7 +70,7 @@ net2matrix <- function(f,warn=1){
      R <- as.matrix(read.matrix(page,skip=n2+1))
      dimnames(R) <- list(rNam,cNam)
    } else {
-     R <- matrix(data=0,nrow=nr,ncol=nc,dimnames=list(rNam,cNam))
+     R <- matrix(data=nolink,nrow=nr,ncol=nc,dimnames=list(rNam,cNam))
      S <- unlist(strsplit(trimws(L[m1:m2]),'[[:space:]]+'))
      b <- as.integer(S[3*(1:m)-2]); e <- as.integer(S[3*(1:m)-1]); v <- as.numeric(S[3*(1:m)])
      if(twomode) e <- e - nr
