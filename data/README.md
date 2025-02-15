@@ -9,7 +9,7 @@
 
 ## Tribes
 
-**Tribes** is social network of tribes of the Gahuku–Gama alliance structure of the Eastern Central Highlands of New Guinea, from Kenneth Read (1954). A link represents signed (+/-) friendships between tribes. Converted into Pajek format by Vladimir Batagelj, 14 Feb 2025
+**Tribes** is social network of tribes of the Gahuku–Gama alliance structure of the Eastern Central Highlands of New Guinea, from Kenneth Read [Cultures of the Central Highlands, New Guinea](https://www.jstor.org/stable/pdf/3629074.pdf)(1954). A link represents signed (+/-) friendships between tribes. Converted into Pajek format by Vladimir Batagelj, 14 Feb 2025
 
 n = 16, mE = 58
 
