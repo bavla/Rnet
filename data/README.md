@@ -3,10 +3,10 @@
 | Network | Nodes    | Weight    |  Sizes | Description |
 | :---         |     :---       |     :---       |     :---       |      :---:   |
 | [BM](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/BM.net)   | ?    | ? | n =  106   |  [desc](https://github.com/bavla/Rnet/blob/master/data/README.md#bm)     |
-| [Football](https://raw.githubusercontent.com/bavla/wNets/main/Data/football.net)   | country    | # players | n = 35      | [desc](http://vlado.fmf.uni-lj.si/pub/networks/data/sport/football.htm)     |
-| [Trade1985](https://raw.githubusercontent.com/bavla/wNets/main/Data/Trade1985.net)   | country    | export USD    | n = 192, m = 12743    | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#trade1985)     |
-| [Trade1985cn](https://raw.githubusercontent.com/bavla/wNets/main/Data/Trade1985cn.net)   | country    | export USD    | n = 192, m = 12743      | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#trade1985)     |
-| [WTyears](https://raw.githubusercontent.com/bavla/wNets/main/Data/WTyears.zip)   | country    | export USD    | n = 238, y = 27    | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#WT)     |
+| [HSEexample1](https://raw.githubusercontent.com/bavla/wNets/main/Data/football.net)   | country    | # players | n = 35      | [desc](http://vlado.fmf.uni-lj.si/pub/networks/data/sport/football.htm)     |
+| [bibNodes.csv](https://raw.githubusercontent.com/bavla/wNets/main/Data/Trade1985.net)   | country    | export USD    | n = 192, m = 12743    | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#trade1985)     |
+| [bibLinks.csv](https://raw.githubusercontent.com/bavla/wNets/main/Data/Trade1985cn.net)   | country    | export USD    | n = 192, m = 12743      | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#trade1985)     |
+| [bib.json](https://raw.githubusercontent.com/bavla/wNets/main/Data/WTyears.zip)   | country    | export USD    | n = 238, y = 27    | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#WT)     |
 | [Tribes](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/tribes.net)   | tribe    | friendship (+/-)    | n = 16, mE = 58     | [desc](https://github.com/bavla/Rnet/blob/master/data/README.md#tribes)     |
 
   
