@@ -1,6 +1,6 @@
 # Data
 
-| Network | Nodes    | Weight    |  Sizes | Description |
+| Network | Nodes    | Links    |  Sizes | Description |
 | :---         |     :---       |     :---       |     :---       |      :---:   |
 | [BM](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/BM.net)   | ?    | ? | n =  106   |  [desc](https://github.com/bavla/Rnet/blob/master/data/README.md#bm)     |
 | [HSEexample1](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/HSEexample1.net)   | nodes    | relation | n = 6, mA = 6, mE = 3      | [desc](https://github.com/bavla/Rnet/blob/master/data/README.md#hse)     |
