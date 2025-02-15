@@ -4,8 +4,8 @@
 | :---         |     :---       |     :---       |     :---       |      :---:   |
 | [BM](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/BM.net)   | ?    | ? | n =  106   |  [desc](https://github.com/bavla/Rnet/blob/master/data/README.md#bm)     |
 | [HSEexample1](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/HSEexample1.net)   | nodes    | relation | n = 6, mA = 6, mE = 3      | [desc](https://github.com/bavla/Rnet/blob/master/data/README.md#hse)     |
-| [bibNodes.csv](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/bibNodes.csv)   | bib units    |     | n = 192, m = 12743    | [desc](https://github.com/bavla/Rnet/blob/master/data/README.md#bib)     |
-| [bibLinks.csv](https://raw.githubusercontent.com/bavla/wNets/main/Data/Trade1985cn.net)   | country    | export USD    | n = 192, m = 12743      | [desc](https://github.com/bavla/Rnet/blob/master/data/README.md#bib)     |
+| [bibNodes.csv](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/bibNodes.csv)   | bib units    |     | n = 1   | [desc](https://github.com/bavla/Rnet/blob/master/data/README.md#bib)     |
+| [bibLinks.csv](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/bibLinks.csv)   | bib units    | bib rels    | n = 192, m = 12743      | [desc](https://github.com/bavla/Rnet/blob/master/data/README.md#bib)     |
 | [bib.json](https://raw.githubusercontent.com/bavla/wNets/main/Data/WTyears.zip)   | country    | export USD    | n = 238, y = 27    | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#WT)     |
 | [Tribes](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/tribes.net)   | tribe    | friendship (+/-)    | n = 16, mE = 58     | [desc](https://github.com/bavla/Rnet/blob/master/data/README.md#tribes)     |
 
