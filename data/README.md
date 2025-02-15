@@ -7,7 +7,7 @@
 | [Trade1985](https://raw.githubusercontent.com/bavla/wNets/main/Data/Trade1985.net)   | country    | export USD    | n = 192, m = 12743    | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#trade1985)     |
 | [Trade1985cn](https://raw.githubusercontent.com/bavla/wNets/main/Data/Trade1985cn.net)   | country    | export USD    | n = 192, m = 12743      | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#trade1985)     |
 | [WTyears](https://raw.githubusercontent.com/bavla/wNets/main/Data/WTyears.zip)   | country    | export USD    | n = 238, y = 27    | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#WT)     |
-| [Tribes](https://raw.githubusercontent.com/bavla/wNets/main/Data/WRtime.zip)   | tribe    | friendship (+/-)    | n = 16, mE = 58     | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#WT)     |
+| [Tribes](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/tribes.net)   | tribe    | friendship (+/-)    | n = 16, mE = 58     | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#WT)     |
 
   
  
