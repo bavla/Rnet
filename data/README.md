@@ -2,7 +2,7 @@
 
 | Network | Nodes    | Weight    |  Sizes | Description |
 | :---         |     :---       |     :---       |     :---       |      :---:   |
-| [EAT](https://raw.githubusercontent.com/bavla/wNets/main/Data/EATnewSR.net)   | word    | assoc. frequency | n =  23219, mA =325589, m0 = 564   |  [desc](http://vlado.fmf.uni-lj.si/pub/networks/data/dic/eat/Eat.htm)     |
+| [BM](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/data/BM.net)   | ?    | ? | n =  106   |  [desc](http://vlado.fmf.uni-lj.si/pub/networks/data/dic/eat/Eat.htm)     |
 | [Football](https://raw.githubusercontent.com/bavla/wNets/main/Data/football.net)   | country    | # players | n = 35      | [desc](http://vlado.fmf.uni-lj.si/pub/networks/data/sport/football.htm)     |
 | [Trade1985](https://raw.githubusercontent.com/bavla/wNets/main/Data/Trade1985.net)   | country    | export USD    | n = 192, m = 12743    | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#trade1985)     |
 | [Trade1985cn](https://raw.githubusercontent.com/bavla/wNets/main/Data/Trade1985cn.net)   | country    | export USD    | n = 192, m = 12743      | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#trade1985)     |
@@ -10,11 +10,14 @@
 | [WTtime](https://raw.githubusercontent.com/bavla/wNets/main/Data/WRtime.zip)   | country    | export USD    | n = 238, y = 27      | [desc](https://github.com/bavla/wNets/blob/main/Data/README.md#WT)     |
 
   
-  * BM.net - collaboration network by Daria Maltseva
+  * BM.net - 
   * HSEexample1 - example network
   * bibNodes.csv, bibLinks.csv - description of a network with two Excel tables
   * bib.json - for EUSN 2016 WS; CSV2JSON
   * tribes.net
+## BM
+
+collaboration network by Daria Maltseva
 
 ## Tribes
 
