@@ -2,8 +2,8 @@
 # Reorder units in clustering hierarchy
 #  https://github.com/bavla/NormNet/blob/main/data/natalija/reorder.md
 # by Vladimir Batagelj, April 17, 2022
-# February 13, 2025  add CorSalton, Balassa
-# Februray 17, 2025  add coreDendro
+# February 13, 2025  add CorSalton, Balassa, CorEuclid
+# Februray 17, 2025  add coreDendro, clOrder, BlockModel
 
 Balassa <- function(P){
    R <- rowSums(P); C <- rowSums(t(P)); T <- sum(R); Z <- P
@@ -61,12 +61,25 @@ toFather <- function(tm){
 
 flip <- function(k,T) {t <- T[k,1]; T[k,1] <- T[k,2]; T[k,2] <- t; return(T)}
 
+clOrder <- function(M,k) if(k<0) return(-k) else
+  return(c(clOrder(M,M[k,1]),clOrder(M,M[k,2])))
+
 # T <- toFather(t$merge)
 # n <- nrow(t$merge)+1
 # s <- t; t$merge <- flip(minCl(8,2,T)-n,t$merge); hm()
+# t$order <- clOrder(t$merge,n-1)
+
+BlockModel <- function(P,q,p,lab){
+  m <- length(table(p))
+  B <- matrix(0,nrow=m,ncol=m); rownames(B) <- colnames(B) <- lab
+  for(i in 1:m){I <- q[p==i]
+    for(j in 1:m){J <- q[p==j]; B[i,j] <- sum(P[I,J])}
+  } 
+  return(B)
+}
 
 coreDendro <- function(lab,core){
-  n <- length(lab);
+  n <- length(lab)
   clu <- list(merge=matrix(0,nrow=n-1,ncol=2),height=rep(0,n-1),
     order=1:n,labels=lab,method="coreDendro",call=NULL,
     dist.method="core level")
