@@ -4,6 +4,7 @@
 # by Vladimir Batagelj, April 17, 2022
 # February 13, 2025  add CorSalton, Balassa, CorEuclid
 # Februray 17, 2025  add coreDendro, clOrder, BlockModel
+# March 29, 2025     add coreCompDendro
 
 Balassa <- function(P){
    R <- rowSums(P); C <- rowSums(t(P)); T <- sum(R); Z <- P
@@ -90,6 +91,32 @@ coreDendro <- function(lab,core){
     clu$value[u]<- core[u+1]; v <- u
     if(core[u+1]<h) {h <- core[u+1]; d <- d+1}
     clu$height[u] <- d
+  }
+  return(clu)
+}
+
+coreCompDendro <- function(lab,core,C){
+  n <- length(lab); J <- rep(0,n); j <- 0; D <- 0
+  clu <- list(merge=matrix(0,nrow=n-1,ncol=2),height=rep(0,n-1),
+    order=1:n,labels=lab,method="coreDendro",call=NULL,
+    dist.method="core level")
+  attr(clu,"class") <- "hclust"
+  i <- 0; h <- core[1]; d <- 1; v <- -1; g <- C[1] 
+  for(u in 2:n){
+    if(g!=C[u]){j <- j+1; J[j] <- v; g <- C[u];
+      h <- core[u]; d <- 1; v <- -u
+    } else {i <- i+1
+      clu$merge[i,1] <- v; clu$merge[i,2] <- -u
+      if(core[u]>h) {h <- core[u]; d <- d+1; D <- max(D,d)}
+      clu$value[i] <- core[u]; v <- i; clu$height[i] <- d
+    }
+  }
+  M <- max(core)*1.2; D <- D*1.2; i <- i+1
+  clu$merge[i,1] <- v; clu$merge[i,2] <- J[j]; j <- j-1
+  clu$value[i] <- M; clu$height[i] <- D
+  for(k in (i+1):(n-1)){
+    clu$merge[k,1] <- J[j]; j <- j-1; clu$merge[k,2] <- k-1
+    clu$value[k] <- M; clu$height[k] <- D
   }
   return(clu)
 }
