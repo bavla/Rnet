@@ -1,16 +1,63 @@
 # ClusNet
+March 27-30, 2025
 
+## Ps cores data
+
+The data are prepared in the file `ct Ps cores.csv`
+```
+ rank  , Id , reg, loc, Clu, Value 
+   1  , "Ted Enamorado"                   , 3 , 3 , 35   , 36.666666666
+   2  , "Gabriel L&#243;pez-Moctezuma"    , 3 , 3 , 35   , 36.666666666
+   3  , "Marc Ratkovic"                   , 3 , 3 , 35   , 36.666666666
+   4  , "Aaron D. Ames"                   , 3 , 2 , 7    , 26.165980584
+   5  , "Lior Pachter"                    , 3 , 3 , 6    , 22.269776227
+   6  , "Chi Ma"                          , 3 , 3 , 23   , 21
+   7  , "Alan E. Rubin"                   , 3 , 3 , 23   , 21
+   8  , "P. P. Vaidyanathan"              , 3 , 3 , 20   , 21
+   9  , "C. Elachi"                       , 2 , 1 , 5    , 18.080555556
+  10  , "Jakob van Zyl"                   , 3 , 2 , 5    , 18
+...
+ 108  , "Renyu Hu"                        , 3 , 2 , 12   , 3.207326663
+ 109  , "Mario Damiano"                   , 9 , 1 , 12   , 3.207326663
+ 110  , "Shu-Heng Shao"                   , 6 , 1 , 13   , 3.205555556
 ```
 
+## Creating a Ps cores dendrogram
+
+These data can be transformed into clustering dendrogram using the function
 ```
+coreCompDendro <- function(lab,core,C){
+  n <- length(lab); J <- rep(0,n); j <- 0; D <- 0
+  clu <- list(merge=matrix(0,nrow=n-1,ncol=2),height=rep(0,n-1),
+    order=1:n,labels=lab,method="coreDendro",call=NULL,
+    dist.method="core level")
+  attr(clu,"class") <- "hclust"
+  i <- 0; h <- core[1]; d <- 1; v <- -1; g <- C[1] 
+  for(u in 2:n){
+    if(g!=C[u]){j <- j+1; J[j] <- v; g <- C[u];
+      h <- core[u]; d <- 1; v <- -u
+    } else {i <- i+1
+      clu$merge[i,1] <- v; clu$merge[i,2] <- -u
+      if(core[u]>h) {h <- core[u]; d <- d+1; D <- max(D,d)}
+      clu$value[i] <- core[u]; v <- i; clu$height[i] <- d
+    }
+  }
+  M <- max(core)*1.2; D <- D*1.2; i <- i+1
+  clu$merge[i,1] <- v; clu$merge[i,2] <- J[j]; j <- j-1
+  clu$value[i] <- M; clu$height[i] <- D
+  for(k in (i+1):(n-1)){
+    clu$merge[k,1] <- J[j]; j <- j-1; clu$merge[k,2] <- k-1
+    clu$value[k] <- M; clu$height[k] <- D
+  }
+  return(clu)
+}
+```
+The function `coreCompDendro`
+
+## Example Caltech
 
 ```
-
-```
-
-
-```
-> wdir <- "C:/Users/vlado/docs/papers/2024/Natalija/All"
+> wdir <- "C:/2024/Natalija/All"
 > setwd(wdir)
 > library(xml2)
 > library(dendextend)
