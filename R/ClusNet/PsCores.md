@@ -90,8 +90,7 @@ Some hints for enhacing the dendrogram can be found in
 > cp <- coreCompDendro(Pp$Id,Pp$Value,Pp$Clu)
 > plot(cp,main="ct Ps cores",cex=0.6)
 
-> hp <- cp$height
-> cp$height <- cp$value
+> hp <- cp$height; cp$height <- cp$value
 > plot(cp,main="ct Ps cores",cex=0.6)
 
 > dend <- as.dendrogram(cp)
