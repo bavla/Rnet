@@ -56,6 +56,18 @@ The function `coreCompDendro` is available in the package [ClusNet.R](../ClusNet
 
 ## Example Caltech
 
+The data are in Pajek files.
+Non ASCII characters in names are represented as XML entities such as &#243;. We use library xml2 to convert them into Unicode.
+
+Another problem is the ordering of Ps cores.
+
+Some hints for enhacing the dendrogram can be found in
+  * https://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning
+  * https://r-charts.com/color-palettes/#google_vignette
+  * https://r-graph-gallery.com/31-custom-colors-in-dendrogram.html
+  * https://r-charts.com/base-r/pch-symbols/
+
+
 ```
 > wdir <- "C:/2024/Natalija/All"
 > setwd(wdir)
@@ -81,11 +93,6 @@ The function `coreCompDendro` is available in the package [ClusNet.R](../ClusNet
 > hp <- cp$height
 > cp$height <- cp$value
 > plot(cp,main="ct Ps cores",cex=0.6)
-
-> # https://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning
-> # https://r-charts.com/color-palettes/#google_vignette
-> # https://r-graph-gallery.com/31-custom-colors-in-dendrogram.html
-> # https://r-charts.com/base-r/pch-symbols/
 
 > dend <- as.dendrogram(cp)
 > col <- paletteer_d("ggthemes::few_Dark")
