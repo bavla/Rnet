@@ -57,7 +57,8 @@ The function `coreCompDendro` is available in the package [ClusNet.R](../ClusNet
 ## Example Caltech
 
 The data are in Pajek files.
-[ctPsCores.svg](ctPsCores.svg)
+
+[ctPsCoresNet.svg](ctPsCoresNet.svg)
 
 Non ASCII characters in names are represented as XML entities such as &#243;. We use library xml2 to convert them into Unicode.
 
@@ -131,6 +132,8 @@ Some hints for enhacing the dendrogram can be found in
 +      text.col = "black", horiz = FALSE, inset = c(0, 0.1))
 > dev.off()
 ```
+[ctPsCores.svg](ctPsCores.svg)
+
 
 ```
 
