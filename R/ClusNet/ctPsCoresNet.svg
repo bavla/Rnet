@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Title: 1. C:\Users\vlado\docs\papers\2024\Natalija\All\Ct net.net (110) -->
+<!-- Creator: Pajek 6.01: http://mrvar.fdv.uni-lj.si/pajek -->
+<!-- CreationDate: 03-30-2025, 4:55:44 AM -->
+<svg xml:space="preserve" viewBox="0 0 1197 803" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<title>1. C:\Users\vlado\docs\papers\2024\Natalija\All\Ct net.net (110)</title>
+<g inkscape:groupmode="layer" id="PajekSig" inkscape:label="PajekSignature">
+<g transform="translate(3 785)">
+<g transform="scale(0.1)">
+<g transform="matrix(1 0 0 -1 0 96)">
+<path d="M   7.67  49.98 L  31.76  72.76 L  46.91  78.63
+         L  57.23  80.49 M  72.86  65.23 L  65.73  83.25
+         L  57.06  75.49 L  56.75  68.65 M  76.27  68.03
+         L  75.65  84.50 L  93.92  91.02 L 107.24  74.87
+         M  80.29  67.72 L  89.28  84.81 L 104.77  81.70
+         L 116.23  73.31 L 121.18  59.33 M  56.75  81.08
+         L  71.31  64.30"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  86.18  70.21 L  91.45  73.00 L  95.78  69.58
+         M  91.14  60.88 L  96.09  62.75 L  98.26  59.33"
+         style="fill:none; stroke:saddlebrown; stroke-width:1.5;"/>
+<path d="M  81.07  49.08 L  87.81  49.08 L  93.30  54.38
+         L  93.30  60.88 L  93.30  67.39 L  87.81  72.69
+         L  81.07  72.69 L  74.33  72.69 L  68.83  67.39
+         L  68.83  60.88 L  68.83  54.38 L  74.33  49.08
+         L  81.07  49.08 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;"/>
+<path d="M  54.63  37.53 L  68.53  43.56 L  75.39  55.85
+         L  69.90  65.35 L  64.41  72.86 L  48.60  74.06
+         L  34.71  68.04 L  20.81  55.02 L  15.95  40.72
+         L  17.44  33.22 L  24.92  28.72 L  40.73  30.51
+         L  54.63  37.53 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;" />
+<path d="M  77.82  50.63 L 103.84  59.33 L 131.10  43.80
+         L 139.46  27.95 L 139.15  15.83 M  35.99   5.27
+         L  47.15  32.92 L  61.71  50.01 L  70.07  46.90
+         L  82.77  45.04 L  83.39  27.02 L  65.42  12.11
+         M  68.52  50.63 L  91.14  49.39 L 103.53  43.17
+         L 117.16  22.67 L 115.30   8.38"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  41.57  54.98 L  60.16  64.61 M  52.41  66.17
+         L  57.99  57.47"
+         style="fill:none; stroke:white; stroke-width:5;"/>
+</g>
+</g>
+<animateMotion dur="20s" path="M3 0 L1179 0" begin="120s" fill="freeze"/>
+</g>
+<g transform="translate(3 785)">
+<g transform="scale(0.1)">
+<text x="5" y="140" style="font-family:Brush Script MT;font-size:75px;fill:green;">Pajek</text>
+</g>
+<animateMotion dur="0.1s" path="M3 0 L1179 0" begin="120s" fill="freeze"/>
+</g>
+</g>      <!-- Layer Signature -->
+
+<g inkscape:groupmode="layer" id="PajekNet" inkscape:label="PajekNetwork">
+
+<!-- Edge:     1    9 -->
+<line x1="753.07" y1="264.43" x2="743.67" y2="366.21" style="stroke-width:3.35;stroke:rgb(0,112,145)"/>
+<!-- Edge:     1   22 -->
+<line x1="753.07" y1="264.43" x2="676.04" y2="317.31" style="stroke-width:9.11;stroke:rgb(0,112,145)"/>
+<!-- Edge:     2   58 -->
+<line x1="690.31" y1="499.48" x2="690.23" y2="554.76" style="stroke-width:4.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:     3   93 -->
+<line x1="875.09" y1="688.68" x2="874.69" y2="745.80" style="stroke-width:3.33;stroke:rgb(0,112,145)"/>
+<!-- Edge:     5   47 -->
+<line x1="559.48" y1="185.64" x2="572.65" y2="144.63" style="stroke-width:0.08;stroke:rgb(0,112,145)"/>
+<!-- Edge:     5  108 -->
+<line x1="559.48" y1="185.64" x2="504.75" y2="228.81" style="stroke-width:18.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6   10 -->
+<line x1="157.10" y1="376.68" x2="221.97" y2="325.95" style="stroke-width:6.43;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6   20 -->
+<line x1="157.10" y1="376.68" x2="145.95" y2="290.33" style="stroke-width:5.17;stroke:rgb(0,112,145)"/>
+<!-- Edge:     6   28 -->
+<line x1="157.10" y1="376.68" x2="57.77" y2="342.14" style="stroke-width:10.67;stroke:rgb(0,112,145)"/>
+<!-- Edge:     7    8 -->
+<line x1="161.42" y1="249.19" x2="100.34" y2="177.01" style="stroke-width:4.73;stroke:rgb(0,112,145)"/>
+<!-- Edge:     7   25 -->
+<line x1="161.42" y1="249.19" x2="166.22" y2="159.74" style="stroke-width:0.33;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   16 -->
+<line x1="100.34" y1="177.01" x2="202.71" y2="208.31" style="stroke-width:0.03;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   21 -->
+<line x1="100.34" y1="177.01" x2="116.56" y2="128.44" style="stroke-width:3.89;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   25 -->
+<line x1="100.34" y1="177.01" x2="166.22" y2="159.74" style="stroke-width:2.09;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   26 -->
+<line x1="100.34" y1="177.01" x2="119.46" y2="228.60" style="stroke-width:2.10;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   51 -->
+<line x1="100.34" y1="177.01" x2="149.62" y2="110.31" style="stroke-width:0.32;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   52 -->
+<line x1="100.34" y1="177.01" x2="51.69" y2="251.48" style="stroke-width:6.64;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   56 -->
+<line x1="100.34" y1="177.01" x2="39.53" y2="199.67" style="stroke-width:5.37;stroke:rgb(0,112,145)"/>
+<!-- Edge:     8   68 -->
+<line x1="100.34" y1="177.01" x2="73.99" y2="69.08" style="stroke-width:1.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:     9   22 -->
+<line x1="743.67" y1="366.21" x2="676.04" y2="317.31" style="stroke-width:0.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    11   15 -->
+<line x1="917.66" y1="271.10" x2="917.66" y2="345.26" style="stroke-width:5.17;stroke:rgb(0,112,145)"/>
+<!-- Edge:    12   17 -->
+<line x1="1074.07" y1="271.10" x2="1074.07" y2="345.26" style="stroke-width:3.33;stroke:rgb(0,112,145)"/>
+<!-- Edge:    13   18 -->
+<line x1="135.94" y1="499.48" x2="135.82" y2="558.00" style="stroke-width:7.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    14   19 -->
+<line x1="1073.35" y1="125.20" x2="1125.04" y2="173.77" style="stroke-width:1.33;stroke:rgb(0,112,145)"/>
+<!-- Edge:    14   29 -->
+<line x1="1073.35" y1="125.20" x2="1048.01" y2="53.97" style="stroke-width:3.15;stroke:rgb(0,112,145)"/>
+<!-- Edge:    14   35 -->
+<line x1="1073.35" y1="125.20" x2="1064.23" y2="209.38" style="stroke-width:1.16;stroke:rgb(0,112,145)"/>
+<!-- Edge:    14   36 -->
+<line x1="1073.35" y1="125.20" x2="1101.73" y2="21.59" style="stroke-width:1.19;stroke:rgb(0,112,145)"/>
+<!-- Edge:    16   25 -->
+<line x1="202.71" y1="208.31" x2="166.22" y2="159.74" style="stroke-width:0.03;stroke:rgb(0,112,145)"/>
+<!-- Edge:    16   46 -->
+<line x1="202.71" y1="208.31" x2="214.87" y2="138.15" style="stroke-width:3.50;stroke:rgb(0,112,145)"/>
+<!-- Edge:    19   29 -->
+<line x1="1125.04" y1="173.77" x2="1048.01" y2="53.97" style="stroke-width:0.15;stroke:rgb(0,112,145)"/>
+<!-- Edge:    19   35 -->
+<line x1="1125.04" y1="173.77" x2="1064.23" y2="209.38" style="stroke-width:1.12;stroke:rgb(0,112,145)"/>
+<!-- Edge:    19   36 -->
+<line x1="1125.04" y1="173.77" x2="1101.73" y2="21.59" style="stroke-width:1.15;stroke:rgb(0,112,145)"/>
+<!-- Edge:    20   28 -->
+<line x1="145.95" y1="290.33" x2="57.77" y2="342.14" style="stroke-width:0.17;stroke:rgb(0,112,145)"/>
+<!-- Edge:    21   25 -->
+<line x1="116.56" y1="128.44" x2="166.22" y2="159.74" style="stroke-width:0.40;stroke:rgb(0,112,145)"/>
+<!-- Edge:    21   26 -->
+<line x1="116.56" y1="128.44" x2="119.46" y2="228.60" style="stroke-width:0.22;stroke:rgb(0,112,145)"/>
+<!-- Edge:    21   51 -->
+<line x1="116.56" y1="128.44" x2="149.62" y2="110.31" style="stroke-width:0.13;stroke:rgb(0,112,145)"/>
+<!-- Edge:    23   24 -->
+<line x1="135.94" y1="594.08" x2="135.82" y2="648.66" style="stroke-width:3.21;stroke:rgb(0,112,145)"/>
+<!-- Edge:    25   26 -->
+<line x1="166.22" y1="159.74" x2="119.46" y2="228.60" style="stroke-width:0.89;stroke:rgb(0,112,145)"/>
+<!-- Edge:    25   51 -->
+<line x1="166.22" y1="159.74" x2="149.62" y2="110.31" style="stroke-width:0.03;stroke:rgb(0,112,145)"/>
+<!-- Edge:    26   52 -->
+<line x1="119.46" y1="228.60" x2="51.69" y2="251.48" style="stroke-width:0.03;stroke:rgb(0,112,145)"/>
+<!-- Edge:    27   37 -->
+<line x1="779.42" y1="135.99" x2="787.53" y2="97.14" style="stroke-width:0.17;stroke:rgb(0,112,145)"/>
+<!-- Edge:    27   39 -->
+<line x1="779.42" y1="135.99" x2="754.08" y2="55.04" style="stroke-width:4.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    27   42 -->
+<line x1="779.42" y1="135.99" x2="824.01" y2="185.64" style="stroke-width:0.06;stroke:rgb(0,112,145)"/>
+<!-- Edge:    27   43 -->
+<line x1="779.42" y1="135.99" x2="742.93" y2="158.66" style="stroke-width:1.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    29   35 -->
+<line x1="1048.01" y1="53.97" x2="1064.23" y2="209.38" style="stroke-width:0.01;stroke:rgb(0,112,145)"/>
+<!-- Edge:    29   36 -->
+<line x1="1048.01" y1="53.97" x2="1101.73" y2="21.59" style="stroke-width:0.01;stroke:rgb(0,112,145)"/>
+<!-- Edge:    30   38 -->
+<line x1="994.29" y1="157.58" x2="912.74" y2="43.98" style="stroke-width:1.50;stroke:rgb(0,112,145)"/>
+<!-- Edge:    30   40 -->
+<line x1="994.29" y1="157.58" x2="975.03" y2="82.03" style="stroke-width:0.33;stroke:rgb(0,112,145)"/>
+<!-- Edge:    30   41 -->
+<line x1="994.29" y1="157.58" x2="959.83" y2="224.49" style="stroke-width:4.22;stroke:rgb(0,112,145)"/>
+<!-- Edge:    30   63 -->
+<line x1="994.29" y1="157.58" x2="898.00" y2="127.36" style="stroke-width:3.17;stroke:rgb(0,112,145)"/>
+<!-- Edge:    31   50 -->
+<line x1="690.31" y1="688.68" x2="690.23" y2="745.80" style="stroke-width:4.89;stroke:rgb(0,112,145)"/>
+<!-- Edge:    33   44 -->
+<line x1="690.31" y1="404.88" x2="690.23" y2="463.02" style="stroke-width:4.72;stroke:rgb(0,112,145)"/>
+<!-- Edge:    34   85 -->
+<line x1="875.09" y1="404.88" x2="874.69" y2="465.18" style="stroke-width:4.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    35   36 -->
+<line x1="1064.23" y1="209.38" x2="1101.73" y2="21.59" style="stroke-width:1.16;stroke:rgb(0,112,145)"/>
+<!-- Edge:    37   59 -->
+<line x1="787.53" y1="97.14" x2="801.72" y2="22.67" style="stroke-width:5.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    38   40 -->
+<line x1="912.74" y1="43.98" x2="975.03" y2="82.03" style="stroke-width:3.83;stroke:rgb(0,112,145)"/>
+<!-- Edge:    38   63 -->
+<line x1="912.74" y1="43.98" x2="898.00" y2="127.36" style="stroke-width:0.17;stroke:rgb(0,112,145)"/>
+<!-- Edge:    42   43 -->
+<line x1="824.01" y1="185.64" x2="742.93" y2="158.66" style="stroke-width:2.13;stroke:rgb(0,112,145)"/>
+<!-- Edge:    42   83 -->
+<line x1="824.01" y1="185.64" x2="785.50" y2="226.65" style="stroke-width:3.19;stroke:rgb(0,112,145)"/>
+<!-- Edge:    43   83 -->
+<line x1="742.93" y1="158.66" x2="785.50" y2="226.65" style="stroke-width:0.08;stroke:rgb(0,112,145)"/>
+<!-- Edge:    45   96 -->
+<line x1="1059.88" y1="404.88" x2="1060.17" y2="461.94" style="stroke-width:4.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    47   48 -->
+<line x1="572.65" y1="144.63" x2="565.56" y2="36.70" style="stroke-width:2.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    47   49 -->
+<line x1="572.65" y1="144.63" x2="600.61" y2="107.38" style="stroke-width:2.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    48   49 -->
+<line x1="565.56" y1="36.70" x2="600.61" y2="107.38" style="stroke-width:2.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    49   57 -->
+<line x1="600.61" y1="107.38" x2="650.70" y2="68.00" style="stroke-width:0.07;stroke:rgb(0,112,145)"/>
+<!-- Edge:    49   60 -->
+<line x1="600.61" y1="107.38" x2="633.47" y2="139.23" style="stroke-width:0.05;stroke:rgb(0,112,145)"/>
+<!-- Edge:    51   68 -->
+<line x1="149.62" y1="110.31" x2="73.99" y2="69.08" style="stroke-width:3.16;stroke:rgb(0,112,145)"/>
+<!-- Edge:    51   91 -->
+<line x1="149.62" y1="110.31" x2="163.93" y2="40.84" style="stroke-width:4.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    52   56 -->
+<line x1="51.69" y1="251.48" x2="39.53" y2="199.67" style="stroke-width:0.17;stroke:rgb(0,112,145)"/>
+<!-- Edge:    53   75 -->
+<line x1="359.81" y1="120.88" x2="317.24" y2="148.94" style="stroke-width:3.83;stroke:rgb(0,112,145)"/>
+<!-- Edge:    53   92 -->
+<line x1="359.81" y1="120.88" x2="353.71" y2="218.87" style="stroke-width:3.72;stroke:rgb(0,112,145)"/>
+<!-- Edge:    53  100 -->
+<line x1="359.81" y1="120.88" x2="398.32" y2="83.11" style="stroke-width:0.06;stroke:rgb(0,112,145)"/>
+<!-- Edge:    54   62 -->
+<line x1="320.73" y1="404.88" x2="320.28" y2="465.18" style="stroke-width:17.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    32   55 -->
+<line x1="505.52" y1="404.88" x2="505.76" y2="465.18" style="stroke-width:4.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    57   60 -->
+<line x1="650.70" y1="68.00" x2="633.47" y2="139.23" style="stroke-width:6.05;stroke:rgb(0,112,145)"/>
+<!-- Edge:    60  109 -->
+<line x1="633.47" y1="139.23" x2="660.09" y2="206.32" style="stroke-width:4.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    61   65 -->
+<line x1="320.73" y1="499.48" x2="320.28" y2="556.92" style="stroke-width:3.22;stroke:rgb(0,112,145)"/>
+<!-- Edge:    64   66 -->
+<line x1="505.52" y1="499.48" x2="505.76" y2="558.00" style="stroke-width:21.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    67   90 -->
+<line x1="875.09" y1="499.48" x2="873.68" y2="550.44" style="stroke-width:3.84;stroke:rgb(0,112,145)"/>
+<!-- Edge:    69   77 -->
+<line x1="1059.88" y1="499.48" x2="1059.16" y2="551.52" style="stroke-width:4.09;stroke:rgb(0,112,145)"/>
+<!-- Edge:    70   82 -->
+<line x1="320.73" y1="594.08" x2="319.27" y2="647.58" style="stroke-width:3.94;stroke:rgb(0,112,145)"/>
+<!-- Edge:    71  101 -->
+<line x1="505.52" y1="594.08" x2="505.76" y2="649.74" style="stroke-width:4.17;stroke:rgb(0,112,145)"/>
+<!-- Edge:    72   73 -->
+<line x1="415.55" y1="271.98" x2="360.54" y2="366.21" style="stroke-width:2.17;stroke:rgb(0,112,145)"/>
+<!-- Edge:    72   74 -->
+<line x1="415.55" y1="271.98" x2="284.81" y2="287.09" style="stroke-width:2.17;stroke:rgb(0,112,145)"/>
+<!-- Edge:    73   74 -->
+<line x1="360.54" y1="366.21" x2="284.81" y2="287.09" style="stroke-width:2.17;stroke:rgb(0,112,145)"/>
+<!-- Edge:    75   76 -->
+<line x1="317.24" y1="148.94" x2="291.54" y2="169.42" style="stroke-width:1.39;stroke:rgb(0,112,145)"/>
+<!-- Edge:    75   88 -->
+<line x1="317.24" y1="148.94" x2="308.12" y2="39.93" style="stroke-width:5.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    75   92 -->
+<line x1="317.24" y1="148.94" x2="353.71" y2="218.87" style="stroke-width:0.50;stroke:rgb(0,112,145)"/>
+<!-- Edge:    75  104 -->
+<line x1="317.24" y1="148.94" x2="304.95" y2="228.79" style="stroke-width:0.06;stroke:rgb(0,112,145)"/>
+<!-- Edge:    76  104 -->
+<line x1="291.54" y1="169.42" x2="304.95" y2="228.79" style="stroke-width:5.89;stroke:rgb(0,112,145)"/>
+<!-- Edge:    78   79 -->
+<line x1="460.15" y1="147.86" x2="440.14" y2="115.76" style="stroke-width:7.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    79   86 -->
+<line x1="440.14" y1="115.76" x2="456.66" y2="41.05" style="stroke-width:8.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    79  100 -->
+<line x1="440.14" y1="115.76" x2="398.32" y2="83.11" style="stroke-width:6.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:     4   80 -->
+<line x1="135.94" y1="404.88" x2="135.82" y2="466.26" style="stroke-width:4.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    84   98 -->
+<line x1="875.09" y1="594.08" x2="874.69" y2="649.74" style="stroke-width:6.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    87   99 -->
+<line x1="1059.88" y1="594.08" x2="1061.18" y2="647.58" style="stroke-width:4.28;stroke:rgb(0,112,145)"/>
+<!-- Edge:    89   97 -->
+<line x1="135.94" y1="688.68" x2="135.82" y2="743.64" style="stroke-width:5.00;stroke:rgb(0,112,145)"/>
+<!-- Edge:    94   95 -->
+<line x1="320.73" y1="688.68" x2="320.28" y2="746.88" style="stroke-width:3.22;stroke:rgb(0,112,145)"/>
+<!-- Edge:   102  103 -->
+<line x1="505.52" y1="688.68" x2="504.75" y2="744.72" style="stroke-width:4.22;stroke:rgb(0,112,145)"/>
+<!-- Edge:   105  106 -->
+<line x1="571.64" y1="286.01" x2="507.79" y2="372.36" style="stroke-width:18.33;stroke:rgb(0,112,145)"/>
+<!-- Edge:   106  107 -->
+<line x1="507.79" y1="372.36" x2="469.27" y2="309.76" style="stroke-width:18.33;stroke:rgb(0,112,145)"/>
+<!-- Edge:   105  107 -->
+<line x1="571.64" y1="286.01" x2="469.27" y2="309.76" style="stroke-width:18.33;stroke:rgb(0,112,145)"/>
+<!-- Edge:    81  110 -->
+<line x1="690.31" y1="594.08" x2="690.23" y2="649.74" style="stroke-width:5.00;stroke:rgb(0,112,145)"/>
+
+<!-- Vertex:     1 -->
+<ellipse cx="753.07" cy="264.43" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="767.16" y="269.56" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Christian Frankenberg</text>
+<text x="753.07" y="271.10" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:     2 -->
+<ellipse cx="690.31" cy="499.48" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="704.40" y="504.61" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Colin F. Camerer</text>
+<text x="690.31" y="506.15" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:     3 -->
+<ellipse cx="875.09" cy="688.68" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="889.19" y="693.81" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Kaushik Bhattacharya</text>
+<text x="875.09" y="695.35" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:     4 -->
+<ellipse cx="135.94" cy="404.88" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="150.04" y="410.01" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Tianyu Zhu</text>
+<text x="135.94" y="411.55" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:     5 -->
+<ellipse cx="559.48" cy="185.64" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="573.57" y="190.77" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">C. Elachi</text>
+<text x="559.48" y="192.31" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:     6 -->
+<ellipse cx="157.10" cy="376.68" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="171.20" y="381.81" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Lior Pachter</text>
+<text x="157.10" y="383.34" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:     7 -->
+<ellipse cx="161.42" cy="249.19" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="175.51" y="254.32" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Rachel Gehlhar</text>
+<text x="161.42" y="255.86" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:     8 -->
+<ellipse cx="100.34" cy="177.01" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="114.44" y="182.14" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Aaron D. Ames</text>
+<text x="100.34" y="183.67" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:     9 -->
+<ellipse cx="743.67" cy="366.21" rx="10.00" ry="10.00" style="fill:rgb(127,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="757.76" y="371.34" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Vincent Humphrey</text>
+<text x="743.67" y="372.88" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    10 -->
+<ellipse cx="221.97" cy="325.95" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="236.06" y="331.08" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">A. Sina Booeshaghi</text>
+<text x="221.97" y="332.62" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    11 -->
+<ellipse cx="917.66" cy="271.10" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="931.75" y="276.23" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Douglas C. Rees</text>
+<text x="917.66" y="277.76" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    12 -->
+<ellipse cx="1074.07" cy="271.10" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1088.17" y="276.23" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Martin J. Savage</text>
+<text x="1074.07" y="277.76" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    13 -->
+<ellipse cx="135.94" cy="499.48" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="150.04" y="504.61" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Michael Ewens</text>
+<text x="135.94" y="506.15" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    14 -->
+<ellipse cx="1073.35" cy="125.20" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1087.44" y="130.33" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Jean-Roch Vlimant</text>
+<text x="1073.35" y="131.87" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    15 -->
+<ellipse cx="917.66" cy="345.26" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="931.75" y="350.39" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Chengcheng Fan</text>
+<text x="917.66" y="351.93" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    16 -->
+<ellipse cx="202.71" cy="208.31" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="216.80" y="213.44" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Steven H. Low</text>
+<text x="202.71" y="214.97" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    17 -->
+<ellipse cx="1074.07" cy="345.26" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1088.17" y="350.39" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Natalie Klco</text>
+<text x="1074.07" y="351.93" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    18 -->
+<ellipse cx="135.82" cy="558.00" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="149.91" y="563.13" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Joan Farre-Mensa</text>
+<text x="135.82" y="564.67" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    19 -->
+<ellipse cx="1125.04" cy="173.77" rx="10.00" ry="10.00" style="fill:rgb(255,99,33);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1139.13" y="178.90" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">M. Pierini</text>
+<text x="1125.04" y="180.43" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    20 -->
+<ellipse cx="145.95" cy="290.33" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="160.05" y="295.46" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Tara Chari</text>
+<text x="145.95" y="297.00" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    21 -->
+<ellipse cx="116.56" cy="128.44" rx="10.00" ry="10.00" style="fill:rgb(127,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="130.65" y="133.57" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Ugo Rosolia</text>
+<text x="116.56" y="135.10" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    22 -->
+<ellipse cx="676.04" cy="317.31" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="690.13" y="322.44" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Yujie Wang</text>
+<text x="676.04" y="323.98" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    23 -->
+<ellipse cx="135.94" cy="594.08" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="150.04" y="599.21" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Renyu Hu</text>
+<text x="135.94" y="600.75" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    24 -->
+<ellipse cx="135.82" cy="648.66" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="149.91" y="653.79" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Mario Damiano</text>
+<text x="135.82" y="655.33" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    25 -->
+<ellipse cx="166.22" cy="159.74" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="180.32" y="164.87" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Yuxiao Chen</text>
+<text x="166.22" y="166.40" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    26 -->
+<ellipse cx="119.46" cy="228.60" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="133.56" y="233.73" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Andrew Singletary</text>
+<text x="119.46" y="235.27" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    27 -->
+<ellipse cx="779.42" cy="135.99" rx="10.00" ry="10.00" style="fill:rgb(127,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="793.51" y="141.12" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Po-Shen Hsin</text>
+<text x="779.42" y="142.66" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    28 -->
+<ellipse cx="57.77" cy="342.14" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="71.87" y="347.27" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Gennady Gorin</text>
+<text x="57.77" y="348.81" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    29 -->
+<ellipse cx="1048.01" cy="53.97" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1062.10" y="59.10" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">J. Duarte</text>
+<text x="1048.01" y="60.63" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    30 -->
+<ellipse cx="994.29" cy="157.58" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1008.39" y="162.71" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Jim Fuller</text>
+<text x="994.29" y="164.24" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    31 -->
+<ellipse cx="690.31" cy="688.68" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="704.40" y="693.81" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Soon‐Jo Chung</text>
+<text x="690.31" y="695.35" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    32 -->
+<ellipse cx="505.52" cy="404.88" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="519.62" y="410.01" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">G. D. Reeves</text>
+<text x="505.52" y="411.55" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    33 -->
+<ellipse cx="690.31" cy="404.88" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="704.40" y="410.01" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">N. Lapusta</text>
+<text x="690.31" y="411.55" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    34 -->
+<ellipse cx="875.09" cy="404.88" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="889.19" y="410.01" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">L. Sun</text>
+<text x="875.09" y="411.55" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    35 -->
+<ellipse cx="1064.23" cy="209.38" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1078.32" y="214.51" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Olmo Cerri</text>
+<text x="1064.23" y="216.05" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    36 -->
+<ellipse cx="1101.73" cy="21.59" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1115.82" y="26.72" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Thong Nguyen</text>
+<text x="1101.73" y="28.25" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    37 -->
+<ellipse cx="787.53" cy="97.14" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="801.62" y="102.27" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Anton Kapustin</text>
+<text x="787.53" y="103.80" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    38 -->
+<ellipse cx="912.74" cy="43.98" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="926.84" y="49.11" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Shing-Chi Leung</text>
+<text x="912.74" y="50.64" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    39 -->
+<ellipse cx="754.08" cy="55.04" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="768.17" y="60.17" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Kevin Slagle</text>
+<text x="754.08" y="61.71" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    40 -->
+<ellipse cx="975.03" cy="82.03" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="989.13" y="87.16" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">K. Nomoto</text>
+<text x="975.03" y="88.69" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    41 -->
+<ellipse cx="959.83" cy="224.49" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="973.93" y="229.62" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Christopher Mankovich</text>
+<text x="959.83" y="231.16" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    42 -->
+<ellipse cx="824.01" cy="185.64" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="838.11" y="190.77" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Ying-Hsuan Lin</text>
+<text x="824.01" y="192.31" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    43 -->
+<ellipse cx="742.93" cy="158.66" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="757.03" y="163.79" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Shu-Heng Shao</text>
+<text x="742.93" y="165.32" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    44 -->
+<ellipse cx="690.23" cy="463.02" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="704.32" y="468.15" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Valère Lambert</text>
+<text x="690.23" y="469.69" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    45 -->
+<ellipse cx="1059.88" cy="404.88" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1073.98" y="410.01" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Morteza Gharib</text>
+<text x="1059.88" y="411.55" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    46 -->
+<ellipse cx="214.87" cy="138.15" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="228.97" y="143.28" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Fengyu Zhou</text>
+<text x="214.87" y="144.82" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    47 -->
+<ellipse cx="572.65" cy="144.63" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="586.75" y="149.76" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Yang Lei</text>
+<text x="572.65" y="151.29" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    48 -->
+<ellipse cx="565.56" cy="36.70" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="579.66" y="41.83" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Alex Gardner</text>
+<text x="565.56" y="43.36" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    49 -->
+<ellipse cx="600.61" cy="107.38" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="614.71" y="112.51" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">P. S. Agram</text>
+<text x="600.61" y="114.04" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    50 -->
+<ellipse cx="690.23" cy="745.80" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="704.32" y="750.93" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Hiroyasu Tsukamoto</text>
+<text x="690.23" y="752.46" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    51 -->
+<ellipse cx="149.62" cy="110.31" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="163.71" y="115.44" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Richard M. Murray</text>
+<text x="149.62" y="116.97" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    52 -->
+<ellipse cx="51.69" cy="251.48" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="65.79" y="256.61" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Xiaobin Xiong</text>
+<text x="51.69" y="258.14" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    53 -->
+<ellipse cx="359.81" cy="120.88" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="373.90" y="126.01" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Babak Hassibi</text>
+<text x="359.81" y="127.55" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    54 -->
+<ellipse cx="320.73" cy="404.88" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="334.83" y="410.01" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Sergio Pellegrino</text>
+<text x="320.73" y="411.55" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    55 -->
+<ellipse cx="505.76" cy="465.18" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="519.86" y="470.31" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">C. M. S. Cohen</text>
+<text x="505.76" y="471.85" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    56 -->
+<ellipse cx="39.53" cy="199.67" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="53.62" y="204.80" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Jenna Reher</text>
+<text x="39.53" y="206.34" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    57 -->
+<ellipse cx="650.70" cy="68.00" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="664.79" y="73.13" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Heresh Fattahi</text>
+<text x="650.70" y="74.66" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    58 -->
+<ellipse cx="690.23" cy="554.76" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="704.32" y="559.89" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Xiaomin Li</text>
+<text x="690.23" y="561.43" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    59 -->
+<ellipse cx="801.72" cy="22.67" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="815.81" y="27.80" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Lev Spodyneiko</text>
+<text x="801.72" y="29.33" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    60 -->
+<ellipse cx="633.47" cy="139.23" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="647.56" y="144.36" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Zhang Yunjun</text>
+<text x="633.47" y="145.90" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    61 -->
+<ellipse cx="320.73" cy="499.48" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="334.83" y="504.61" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">John F. Brady</text>
+<text x="320.73" y="506.15" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    62 -->
+<ellipse cx="320.28" cy="465.18" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="334.38" y="470.31" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Koryo Miura</text>
+<text x="320.28" y="471.85" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    63 -->
+<ellipse cx="898.00" cy="127.36" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="912.10" y="132.49" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Samantha Wu</text>
+<text x="898.00" y="134.02" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    64 -->
+<ellipse cx="505.52" cy="499.48" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="519.62" y="504.61" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Chi Ma</text>
+<text x="505.52" y="506.15" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    65 -->
+<ellipse cx="320.28" cy="556.92" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="334.38" y="562.05" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Zhiwei Peng</text>
+<text x="320.28" y="563.59" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    66 -->
+<ellipse cx="505.76" cy="558.00" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="519.86" y="563.13" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Alan E. Rubin</text>
+<text x="505.76" y="564.67" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    67 -->
+<ellipse cx="875.09" cy="499.48" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="889.19" y="504.61" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Domniki Asimaki</text>
+<text x="875.09" y="506.15" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    68 -->
+<ellipse cx="73.99" cy="69.08" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="88.08" y="74.21" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Ayush Pandey</text>
+<text x="73.99" y="75.74" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    69 -->
+<ellipse cx="1059.88" cy="499.48" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1073.98" y="504.61" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Tien-Hao Liao</text>
+<text x="1059.88" y="506.15" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    70 -->
+<ellipse cx="320.73" cy="594.08" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="334.83" y="599.21" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">R. Michael Alvarez</text>
+<text x="320.73" y="600.75" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    71 -->
+<ellipse cx="505.52" cy="594.08" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="519.62" y="599.21" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Federico Echenique</text>
+<text x="505.52" y="600.75" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    72 -->
+<ellipse cx="415.55" cy="271.98" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="429.65" y="277.11" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Alan Rubel</text>
+<text x="415.55" y="278.65" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    73 -->
+<ellipse cx="360.54" cy="366.21" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="374.63" y="371.34" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Clinton Castro</text>
+<text x="360.54" y="372.88" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    74 -->
+<ellipse cx="284.81" cy="287.09" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="298.90" y="292.22" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Adam Pham</text>
+<text x="284.81" y="293.76" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    75 -->
+<ellipse cx="317.24" cy="148.94" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="331.34" y="154.07" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Victoria Kostina</text>
+<text x="317.24" y="155.61" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    76 -->
+<ellipse cx="291.54" cy="169.42" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="305.63" y="174.55" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Michelle Effros</text>
+<text x="291.54" y="176.09" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    77 -->
+<ellipse cx="1059.16" cy="551.52" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1073.25" y="556.65" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Seung-Bum Kim</text>
+<text x="1059.16" y="558.19" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    78 -->
+<ellipse cx="460.15" cy="147.86" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="474.25" y="152.99" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Pranav Kulkarni</text>
+<text x="460.15" y="154.53" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    79 -->
+<ellipse cx="440.14" cy="115.76" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="454.24" y="120.89" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">P. P. Vaidyanathan</text>
+<text x="440.14" y="122.42" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    80 -->
+<ellipse cx="135.82" cy="466.26" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="149.91" y="471.39" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Troy Van Voorhis</text>
+<text x="135.82" y="472.92" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    81 -->
+<ellipse cx="690.31" cy="594.08" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="704.40" y="599.21" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">William Clemons</text>
+<text x="690.31" y="600.75" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    82 -->
+<ellipse cx="319.27" cy="647.58" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="333.36" y="652.71" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Yimeng Li</text>
+<text x="319.27" y="654.25" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    83 -->
+<ellipse cx="785.50" cy="226.65" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="799.59" y="231.78" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Chi‐Ming Chang</text>
+<text x="785.50" y="233.32" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    84 -->
+<ellipse cx="875.09" cy="594.08" rx="10.00" ry="10.00" style="fill:rgb(127,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="889.19" y="599.21" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Rupert L. Frank</text>
+<text x="875.09" y="600.75" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    85 -->
+<ellipse cx="874.69" cy="465.18" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="888.79" y="470.31" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Dana Jones</text>
+<text x="874.69" y="471.85" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    86 -->
+<ellipse cx="456.66" cy="41.05" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="470.75" y="46.18" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Po‐Chih Chen</text>
+<text x="456.66" y="47.71" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    87 -->
+<ellipse cx="1059.88" cy="594.08" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1073.98" y="599.21" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Shao‐Min Hung</text>
+<text x="1059.88" y="600.75" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    88 -->
+<ellipse cx="308.12" cy="39.93" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="322.21" y="45.06" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Nian Guo</text>
+<text x="308.12" y="46.60" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    89 -->
+<ellipse cx="135.94" cy="688.68" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="150.04" y="693.81" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Josette Bellan</text>
+<text x="135.94" y="695.35" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    90 -->
+<ellipse cx="873.68" cy="550.44" rx="10.00" ry="10.00" style="fill:rgb(127,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="887.77" y="555.57" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Joaquin Garcia‐Suarez</text>
+<text x="873.68" y="557.11" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    91 -->
+<ellipse cx="163.93" cy="40.84" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="178.02" y="45.97" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Chelsea Y. Hu</text>
+<text x="163.93" y="47.51" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    92 -->
+<ellipse cx="353.71" cy="218.87" rx="10.00" ry="10.00" style="fill:rgb(255,99,33);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="367.81" y="224.00" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Oron Sabag</text>
+<text x="353.71" y="225.53" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    93 -->
+<ellipse cx="874.69" cy="745.80" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="888.79" y="750.93" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Swarnava Ghosh</text>
+<text x="874.69" y="752.46" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    94 -->
+<ellipse cx="320.73" cy="688.68" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="334.83" y="693.81" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Daniil V. Ilyin</text>
+<text x="320.73" y="695.35" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:    95 -->
+<ellipse cx="320.28" cy="746.88" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="334.38" y="752.01" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Snezhana I. Abarzhi</text>
+<text x="320.28" y="753.54" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    96 -->
+<ellipse cx="1060.17" cy="461.94" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1074.27" y="467.07" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Cong Wang</text>
+<text x="1060.17" y="468.61" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    97 -->
+<ellipse cx="135.82" cy="743.64" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="149.91" y="748.77" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Nek Sharan</text>
+<text x="135.82" y="750.31" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:    98 -->
+<ellipse cx="874.69" cy="649.74" rx="10.00" ry="10.00" style="fill:rgb(127,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="888.79" y="654.87" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Simon Larson</text>
+<text x="874.69" y="656.41" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:    99 -->
+<ellipse cx="1061.18" cy="647.58" rx="10.00" ry="10.00" style="fill:rgb(255,255,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1075.28" y="652.71" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Po‐Jang Hsieh</text>
+<text x="1061.18" y="654.25" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+<!-- Vertex:   100 -->
+<ellipse cx="398.32" cy="83.11" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="412.42" y="88.24" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Oğuzhan Teke</text>
+<text x="398.32" y="89.77" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:   101 -->
+<ellipse cx="505.76" cy="649.74" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="519.86" y="654.87" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Christopher P. Chambers</text>
+<text x="505.76" y="656.41" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:   102 -->
+<ellipse cx="505.52" cy="688.68" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="519.62" y="693.81" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Shekar Viswanathan</text>
+<text x="505.52" y="695.35" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:   103 -->
+<ellipse cx="504.75" cy="744.72" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="518.84" y="749.85" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Howard Evans</text>
+<text x="504.75" y="751.38" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:   104 -->
+<ellipse cx="304.95" cy="228.79" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="319.04" y="233.92" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Michael Langberg</text>
+<text x="304.95" y="235.46" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:   105 -->
+<ellipse cx="571.64" cy="286.01" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="585.74" y="291.15" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Ted Enamorado</text>
+<text x="571.64" y="292.68" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:   106 -->
+<ellipse cx="507.79" cy="372.36" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="521.88" y="377.49" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Gabriel López-Moctezuma</text>
+<text x="507.79" y="379.03" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">●</text>
+<!-- Vertex:   107 -->
+<ellipse cx="469.27" cy="309.76" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="483.37" y="314.89" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Marc Ratkovic</text>
+<text x="469.27" y="316.43" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:   108 -->
+<ellipse cx="504.75" cy="228.81" rx="10.00" ry="10.00" style="fill:rgb(255,0,0);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="518.84" y="233.94" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Jakob van Zyl</text>
+<text x="504.75" y="235.48" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">■</text>
+<!-- Vertex:   109 -->
+<ellipse cx="660.09" cy="206.32" rx="10.00" ry="10.00" style="fill:rgb(96,109,196);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="674.18" y="211.45" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">André Theron</text>
+<text x="660.09" y="212.98" style="font-family:Arial;font-size:20px;fill:rgb(255,255,255);text-anchor:middle;">▲</text>
+<!-- Vertex:   110 -->
+<ellipse cx="690.23" cy="649.74" rx="10.00" ry="10.00" style="fill:rgb(255,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="704.32" y="654.87" style="font-family:Arial;font-weight: bold;font-size:9px;fill:rgb(173,0,0)">Nadia Riera</text>
+<text x="690.23" y="656.41" style="font-family:Arial;font-size:20px;fill:rgb(173,0,0);text-anchor:middle;">▲</text>
+</g>         <!-- Layer Network -->
+</svg>
