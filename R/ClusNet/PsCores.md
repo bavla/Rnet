@@ -52,7 +52,7 @@ coreCompDendro <- function(lab,core,C){
   return(clu)
 }
 ```
-The function `coreCompDendro`
+The function `coreCompDendro` is available in the package [ClusNet.R](../ClusNet.R).
 
 ## Example Caltech
 
