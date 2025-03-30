@@ -63,9 +63,9 @@ Another problem is the ordering of Ps cores.
 
 Some hints for enhacing the dendrogram can be found in
   * [Beautiful dendrogram visualizations in R](https://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning)
-  * https://r-charts.com/color-palettes/#google_vignette
-  * https://r-graph-gallery.com/31-custom-colors-in-dendrogram.html
-  * https://r-charts.com/base-r/pch-symbols/
+  * [Color palettes](https://r-charts.com/color-palettes/#google_vignette)
+  * [Dendrogram with color and legend in R](https://r-graph-gallery.com/31-custom-colors-in-dendrogram.html)
+  * [R pch symbols](https://r-charts.com/base-r/pch-symbols/)
 
 
 ```
