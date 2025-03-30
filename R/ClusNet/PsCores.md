@@ -96,6 +96,9 @@ Some hints for enhacing the dendrogram can be found in
 > dend <- as.dendrogram(cp)
 > col <- paletteer_d("ggthemes::few_Dark")
 > shape <- c(17, 15, 16)
+> Reg <- c("East and Southeast Asia", "Europe", "North America", "South Asia",
++   "Australia and Oceania", "South America", "Middle East", "Central Asia", "QQ")
+>
 > dend %>% set("labels_cex",0.6) %>% 
 +   set("labels_col",col[Pp$reg]) %>% 
 +   set("hang_leaves",0.05) %>% 
@@ -104,15 +107,13 @@ Some hints for enhacing the dendrogram can be found in
 +   set("leaves_col", col[Pp$reg]) %>% 
 +   plot(main="ct Ps cores")
 > 
-> Reg <- c("East and Southeast Asia", "Europe", "North America", "South Asia",
-+   "Australia and Oceania", "South America", "Middle East", "Central Asia", "QQ")
 > legend("topright", 
 +      legend = Reg, col = col, 
 +      pch = rep(20,9), bty = "n",  pt.cex = 1.5, cex = 0.8 , 
 +      text.col = "black", horiz = FALSE, inset = c(0, 0.1))
 ```
 
-
+### Exporting picture to SVG
 ```
 > svglite("ctPsCores.svg",width=16,height=8)
 > dend %>% set("labels_cex",0.6) %>% 
@@ -122,8 +123,6 @@ Some hints for enhacing the dendrogram can be found in
 +   set("leaves_cex", 1) %>%  
 +   set("leaves_col", col[Pp$reg]) %>% 
 +   plot(main="ct Ps cores") 
-> Reg <- c("East and Southeast Asia", "Europe", "North America", "South Asia",
-+   "Australia and Oceania", "South America", "Middle East", "Central Asia", "QQ")
 > legend("topright", 
 +      legend = Reg, col = col, 
 +      pch = rep(20,9), bty = "n",  pt.cex = 1.5, cex = 0.8 , 
