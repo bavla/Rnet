@@ -114,7 +114,9 @@ Some hints for enhacing the dendrogram can be found in
 +   pch = rep(20,9), bty = "n", pt.cex = 1.5, cex = 0.8 , 
 +   text.col = "black", horiz = FALSE, inset = c(0, 0.1))
 ```
-<img src="ctPsCores.png" width=800 />
+<img src="ctPsCores.png" width=1000 />
+
+
 ### Exporting picture to SVG
 ```
 > svglite("ctPsCores.svg",width=16,height=8)
