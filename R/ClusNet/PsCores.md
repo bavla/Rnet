@@ -70,6 +70,8 @@ Some hints for enhacing the dendrogram can be found in
   * [Dendrogram with color and legend in R](https://r-graph-gallery.com/31-custom-colors-in-dendrogram.html)
   * [R pch symbols](https://r-charts.com/base-r/pch-symbols/)
 
+<img src="ctPsCores.png" width=1000 />
+
 
 ```
 > wdir <- "C:/2024/Natalija/All"
@@ -114,7 +116,6 @@ Some hints for enhacing the dendrogram can be found in
 +   pch = rep(20,9), bty = "n", pt.cex = 1.5, cex = 0.8 , 
 +   text.col = "black", horiz = FALSE, inset = c(0, 0.1))
 ```
-<img src="ctPsCores.png" width=1000 />
 
 [ctPsCores.pdf](ctPsCores.pdf)
 
