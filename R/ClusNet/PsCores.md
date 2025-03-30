@@ -110,10 +110,9 @@ Some hints for enhacing the dendrogram can be found in
 +   set("leaves_col", col[Pp$reg]) %>% 
 +   plot(main="ct Ps cores")
 > 
-> legend("topright", 
-+      legend = Reg, col = col, 
-+      pch = rep(20,9), bty = "n",  pt.cex = 1.5, cex = 0.8 , 
-+      text.col = "black", horiz = FALSE, inset = c(0, 0.1))
+> legend("topright", legend = Reg, col = col, 
++   pch = rep(20,9), bty = "n", pt.cex = 1.5, cex = 0.8 , 
++   text.col = "black", horiz = FALSE, inset = c(0, 0.1))
 ```
 
 ### Exporting picture to SVG
@@ -126,10 +125,9 @@ Some hints for enhacing the dendrogram can be found in
 +   set("leaves_cex", 1) %>%  
 +   set("leaves_col", col[Pp$reg]) %>% 
 +   plot(main="ct Ps cores") 
-> legend("topright", 
-+      legend = Reg, col = col, 
-+      pch = rep(20,9), bty = "n",  pt.cex = 1.5, cex = 0.8 , 
-+      text.col = "black", horiz = FALSE, inset = c(0, 0.1))
+> legend("topright", legend = Reg, col = col, 
++   pch = rep(20,9), bty = "n",  pt.cex = 1.5, cex = 0.8 , 
++   text.col = "black", horiz = FALSE, inset = c(0, 0.1))
 > dev.off()
 ```
 [ctPsCores.svg](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/R/ClusNet/ctPsCores.svg)
