@@ -57,6 +57,8 @@ The function `coreCompDendro` is available in the package [ClusNet.R](../ClusNet
 ## Example Caltech
 
 The data are in Pajek files.
+[ctPsCores.svg](ctPsCores.svg)
+
 Non ASCII characters in names are represented as XML entities such as &#243;. We use library xml2 to convert them into Unicode.
 
 Another problem is the ordering of Ps cores.
