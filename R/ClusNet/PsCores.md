@@ -116,6 +116,7 @@ Some hints for enhacing the dendrogram can be found in
 ```
 <img src="ctPsCores.png" width=1000 />
 
+[ctPsCores.pdf](ctPsCores.pdf)
 
 ### Exporting picture to SVG
 ```
