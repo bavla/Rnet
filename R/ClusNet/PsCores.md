@@ -62,7 +62,7 @@ Non ASCII characters in names are represented as XML entities such as &#243;. We
 Another problem is the ordering of Ps cores.
 
 Some hints for enhacing the dendrogram can be found in
-  * https://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning
+  * [Beautiful dendrogram visualizations in R](https://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning)
   * https://r-charts.com/color-palettes/#google_vignette
   * https://r-graph-gallery.com/31-custom-colors-in-dendrogram.html
   * https://r-charts.com/base-r/pch-symbols/
