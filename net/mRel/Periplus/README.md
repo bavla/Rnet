@@ -74,35 +74,31 @@ We changed the following lines in the file Dataset.csv
 ```
 The changed data are saved in the file [DatasetCorr.csv](DatasetCorr.csv).
 
+### Converting
 ```
 ```
 
 
 ```
 > P <- read.table("DatasetCorr.csv",sep=";",head=TRUE)
-> dim(P)
-[1] 1012   23
-> str(P)
 > U <- P[P$Id %in% 1001:1999,c("Id","Label","Nature","Longitude","Latitude")]
 > V <- P[P$Id %in% 2001:2999,c("Id","Label","Nature","Type","port.port","X","Port.commodity.group")]
 > V1 <- P[P$Id.1 %in% 2001:2999,c("Id.1","Label.1")]
 > U <- U[order(U$Id),]; V <- V[order(V$Id),]; V1 <- V1[order(V1$Id.1),]
 
-
 > # place-product import-export / directed
 > R <- P[!is.na(P$Source),c("Source","Target")]
 > # place-place mention in text / undirected
 > Ra <- P[!is.na(P$Source.a),c("Source.a","Target.a")]
-> # proximal port / undirected
+> # port-product import-export ??? / directed
 > Rb <- P[!is.na(P$Source.b),c("Source.b","Target.b")]
-> # 
+> # product-product
 > Rd <- P[!is.na(P$Source.d),c("Source.d","Target.d")]
 
 > L <- sort(union(U$Id,c(V$Id,V1$Id.1))); n <- length(L)
 > nodes <- data.frame(Id=L,Name=rep("",n),Lon=rep(0,n),Lat=rep(0,n))
 > I <- which(L %in% U$Id)
-> nodes$Name[I] <- U$Label
-> nodes$Lon[I] <- U$Longitude; nodes$Lat[I] <- U$Latitude
+> nodes$Name[I] <- U$Label; nodes$Lon[I] <- U$Longitude; nodes$Lat[I] <- U$Latitude
 > nodes$Name[which(L %in% V$Id)] <- V$Label
 > nodes$Name[which(L %in% V1$Id.1)] <- V1$Label.1
 
@@ -136,9 +132,6 @@ The changed data are saved in the file [DatasetCorr.csv](DatasetCorr.csv).
 
 > b <- c("place","product")[1+(L>1999)]
 > vecnom2clu(b,Clu="Periplus2m.clu")
-
-
-
 ```
 
 
