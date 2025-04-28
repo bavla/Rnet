@@ -4,6 +4,7 @@
 
 ## Conversion into Pajek format
 
+### Data cleaning
 ```
 > wdir <- "C:/Users/vlado/DL/data/periplus"
 > setwd(wdir)
@@ -72,6 +73,74 @@ We changed the following lines in the file Dataset.csv
 898 1056;Kammoni;;;72.58;21.16;1056;2093;;;;;;;;1056;2115;;;;;;
 ```
 The changed data are saved in the file [DatasetCorr.csv](DatasetCorr.csv).
+
+```
+```
+
+
+```
+> P <- read.table("DatasetCorr.csv",sep=";",head=TRUE)
+> dim(P)
+[1] 1012   23
+> str(P)
+> U <- P[P$Id %in% 1001:1999,c("Id","Label","Nature","Longitude","Latitude")]
+> V <- P[P$Id %in% 2001:2999,c("Id","Label","Nature","Type","port.port","X","Port.commodity.group")]
+> V1 <- P[P$Id.1 %in% 2001:2999,c("Id.1","Label.1")]
+> U <- U[order(U$Id),]; V <- V[order(V$Id),]; V1 <- V1[order(V1$Id.1),]
+
+
+> # place-product import-export / directed
+> R <- P[!is.na(P$Source),c("Source","Target")]
+> # place-place mention in text / undirected
+> Ra <- P[!is.na(P$Source.a),c("Source.a","Target.a")]
+> # proximal port / undirected
+> Rb <- P[!is.na(P$Source.b),c("Source.b","Target.b")]
+> # 
+> Rd <- P[!is.na(P$Source.d),c("Source.d","Target.d")]
+
+> L <- sort(union(U$Id,c(V$Id,V1$Id.1))); n <- length(L)
+> nodes <- data.frame(Id=L,Name=rep("",n),Lon=rep(0,n),Lat=rep(0,n))
+> I <- which(L %in% U$Id)
+> nodes$Name[I] <- U$Label
+> nodes$Lon[I] <- U$Longitude; nodes$Lat[I] <- U$Latitude
+> nodes$Name[which(L %in% V$Id)] <- V$Label
+> nodes$Name[which(L %in% V1$Id.1)] <- V1$Label.1
+
+> net <- file("Periplus.net","w",encoding="UTF-8")
+> cat("% csv2Pajek",date(),"\n*vertices",n,"\n",file=net)
+> v <- as.integer(factor(L,levels=L)) 
+> for(i in 1:n) cat(v[i],' "',nodes$Name[i],'" ',
++   nodes$Lon[i],' ',nodes$Lat[i],' 0.5\n',sep="",file=net)
+> 
+> cat('*arcs :1 "places-products in text"',"\n",sep="",file=net)
+> S <- as.integer(factor(R$Source,levels=L)) 
+> T <- as.integer(factor(R$Target,levels=L))
+> for(i in 1:length(S)) cat(S[i],T[i],1,"\n",file=net)
+> 
+> cat('*edges :2 "places links in text"',"\n",sep="",file=net)
+> S <- as.integer(factor(Ra$Source.a,levels=L)) 
+> T <- as.integer(factor(Ra$Target.a,levels=L))
+> for(i in 1:length(S)) cat(S[i],T[i],1,"\n",file=net)
+> 
+> cat('*arcs :3 "places-products"',"\n",sep="",file=net)
+> S <- as.integer(factor(Rb$Source.b,levels=L)) 
+> T <- as.integer(factor(Rb$Target.b,levels=L))
+> for(i in 1:length(S)) cat(S[i],T[i],1,"\n",file=net)
+> 
+> cat('*arcs :4 "products links"',"\n",sep="",file=net)
+> S <- as.integer(factor(Rd$Source.d,levels=L)) 
+> T <- as.integer(factor(Rd$Target.d,levels=L))
+> for(i in 1:length(S)) cat(S[i],T[i],1,"\n",file=net)
+> 
+> close(net)
+
+> b <- c("place","product")[1+(L>1999)]
+> vecnom2clu(b,Clu="Periplus2m.clu")
+
+
+
+```
+
 
 ```
 ```
