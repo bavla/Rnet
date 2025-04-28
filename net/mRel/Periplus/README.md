@@ -77,9 +77,6 @@ We changed the following lines in the file Dataset.csv
 The changed data are saved in the file [DatasetCorr.csv](DatasetCorr.csv).
 
 ### Converting
-```
-```
-
 
 ```
 > P <- read.table("DatasetCorr.csv",sep=";",head=TRUE)
