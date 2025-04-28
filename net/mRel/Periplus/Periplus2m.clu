@@ -1,4 +1,9 @@
-﻿% nom2Pajek Mon Apr 28 04:41:38 2025 
+﻿% The Periplus of the Erythraean Sea
+% by Seland, Eivind Heldaas, 2016, eivind.seland@uib.no
+% https://bora.uib.no/bora-xmlui/handle/1956/11470
+% nom2Pajek Mon Apr 28 04:41:38 2025 
+% converted to Pajek format by Vladimir Batagelj
+% 2-mode partition
 % 1: place; 2: product 
 *vertices 189 
 1
