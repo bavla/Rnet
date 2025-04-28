@@ -1,10 +1,10 @@
 # Multirelational networks
 
-- [Lazega]()
-- [FAO 2010]()
-- [London]()
-- [EuAir]()
-- [Periplus]()
+- [Lazega](Lazega)
+- [FAO 2010](FAO)
+- [London](London)
+- [EuAir](EuAir)
+- [Periplus](Periplus)
 
 <hr>
 
