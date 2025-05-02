@@ -14,7 +14,7 @@
 #   Feb  7, 2024 - vecnom2clu nominal variable to partition with legend
 #   Jun 29, 2024 - unescape_html, nNodes, idNamesTab, listTitles 
 #   Feb  9, 2025 - net2matrix, matrix2net / nolink
-#   May  2, 2025 - uvLab2net factorization of U, V 
+#   May  2, 2025 - uvLab2net factorization of U, V and default W=1
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 # http://localhost:8800/doku.php?id=work:bib:alex:lst
@@ -151,10 +151,11 @@ uvrwt2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",
   close(net)
 }
 
-uvLab2net <- function(Lab,U,V,W,t=NULL,Net="Pajek.net",dir=FALSE,encoding="UTF-8"){
+uvLab2net <- function(Lab,U,V,W=NULL,t=NULL,Net="Pajek.net",dir=FALSE,encoding="UTF-8"){
   net <- file(Net,"w",encoding=encoding)
   if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=net)
   n <- length(Lab); m <- length(U); time <- !is.null(t)
+  if(is.null(W)) W <- rep(1,length(u))
   if(time){tmin <- min(t); tmax <- max(t); tin <- paste('" [',tmin,"-",tmax,"]",sep="")}
   cat("% uvLab2net",date(),"\n*vertices",n,"\n",file=net)
   for(v in 1:n) cat(v,' "',Lab[v],ifelse(time,tin,'"'),'\n',sep="",file=net)
