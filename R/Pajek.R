@@ -14,6 +14,7 @@
 #   Feb  7, 2024 - vecnom2clu nominal variable to partition with legend
 #   Jun 29, 2024 - unescape_html, nNodes, idNamesTab, listTitles 
 #   Feb  9, 2025 - net2matrix, matrix2net / nolink
+#   May  2, 2025 - uvLab2net factorization of U, V 
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 # http://localhost:8800/doku.php?id=work:bib:alex:lst
