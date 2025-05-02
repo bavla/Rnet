@@ -158,7 +158,8 @@ uvLab2net <- function(Lab,U,V,W,t=NULL,Net="Pajek.net",dir=FALSE,encoding="UTF-8
   cat("% uvLab2net",date(),"\n*vertices",n,"\n",file=net)
   for(v in 1:n) cat(v,' "',Lab[v],ifelse(time,tin,'"'),'\n',sep="",file=net)
   cat(ifelse(dir,"*arcs\n","*edges\n"),file=net)
-  for(e in 1:m) cat(U[e],V[e],W[e],ifelse(time,paste(" [",t[e],"]"),""),"\n",file=net)
+  u <- factor(U,levels=Lab); v <- factor(V,levels=Lab)
+  for(e in 1:m) cat(u[e],v[e],W[e],ifelse(time,paste(" [",t[e],"]"),""),"\n",file=net)
   close(net)
 } 
 
