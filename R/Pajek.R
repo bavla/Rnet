@@ -155,7 +155,7 @@ uvLab2net <- function(Lab,U,V,W=NULL,t=NULL,Net="Pajek.net",dir=FALSE,encoding="
   net <- file(Net,"w",encoding=encoding)
   if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=net)
   n <- length(Lab); m <- length(U); time <- !is.null(t)
-  if(is.null(W)) W <- rep(1,length(u))
+  if(is.null(W)) W <- rep(1,length(U))
   if(time){tmin <- min(t); tmax <- max(t); tin <- paste('" [',tmin,"-",tmax,"]",sep="")}
   cat("% uvLab2net",date(),"\n*vertices",n,"\n",file=net)
   for(v in 1:n) cat(v,' "',Lab[v],ifelse(time,tin,'"'),'\n',sep="",file=net)
