@@ -161,6 +161,15 @@ extract_clusters <- function(N,atn,clus){
   return(induced_subgraph(N,S))
 }
 
+interlinks <- function(N,atn,c1,c2,col1="red",col2="blue"){
+  S <- extract_clusters(N,atn,c(c1,c2))
+  C <- vertex_attr(S,atn)
+  C1 <- V(S)[C==c1]; C2 <- V(S)[C==c2]
+  V(S)$color <- ifelse(C==c1,col1,col2)
+  P <- E(S)[(C1 %--% C1)|(C2 %--% C2)]
+  return(delete_edges(S,P))
+}
+  
 vertex_cut <- function(N,atn,t){
   v <- vertex_attr(N,atn); vCut <- V(N)[v>=t] 
   return(induced_subgraph(N,vCut))
