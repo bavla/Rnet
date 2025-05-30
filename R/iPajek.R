@@ -130,8 +130,8 @@ netsJSON_to_graph <- function(BB,directed=TRUE){
 }
 
 # https://lists.nongnu.org/archive/html/igraph-help/2013-07/msg00085.html
-graph.reverse <- function (graph) {
-  if (!is.directed(graph))
+graph_reverse <- function (graph) {
+  if (!is_directed(graph))
     return(graph)
   e <- get.data.frame(graph, what="edges")
   ## swap "from" & "to"
