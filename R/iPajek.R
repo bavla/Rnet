@@ -3,8 +3,8 @@
 # by Vladimir Batagelj
 # version 0: additional functions used in igraph examples for the Network analysis
 #            course at HSE Moscow in November 2017 and December 2018 by Vladimir Batagelj
-#            source("https://raw.githubusercontent.com/bavla/Rnet/master/R/igraph+.R")
 # version 1: December 2024
+#            source("https://raw.githubusercontent.com/bavla/Rnet/master/R/iPajek.R")
 
 # source("iPajek.R")
 
