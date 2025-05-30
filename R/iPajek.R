@@ -133,13 +133,13 @@ netsJSON_to_graph <- function(BB,directed=TRUE){
 graph_reverse <- function (graph) {
   if (!is_directed(graph))
     return(graph)
-  e <- get.data.frame(graph, what="edges")
+  e <- as_data_frame(graph, what="edges")
   ## swap "from" & "to"
   neworder <- 1:length(e)
   neworder[1:2] <- c(2,1)
   e <- e[neworder]
   names(e) <- names(e)[neworder]
-  graph.data.frame(e, vertices = get.data.frame(graph, what="vertices"))
+  graph.data.frame(e, vertices = as_data_frame(graph, what="vertices"))
 }
 
 top <- function(v,k){
