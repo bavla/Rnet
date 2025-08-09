@@ -15,6 +15,7 @@
 #   Jun 29, 2024 - unescape_html, nNodes, idNamesTab, listTitles 
 #   Feb  9, 2025 - net2matrix, matrix2net / nolink
 #   May  2, 2025 - uvLab2net factorization of U, V and default W=1
+#   Aug  8, 2025 - removehash, vector2nam saves names to a NAM file
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 # http://localhost:8800/doku.php?id=work:bib:alex:lst
@@ -24,6 +25,8 @@
 unescape_html <- function(str){
   xml2::xml_text(xml2::read_html(paste0("<x>", str, "</x>")))
 }
+
+removehash <- function(s) ifelse(substr(s,1,1)=="#",substr(s,2,nchar(s)),s)
 
 nNodes <- function(netF){ 
   net <- file(netF,"r")
@@ -164,6 +167,14 @@ uvLab2net <- function(Lab,U,V,W=NULL,t=NULL,Net="Pajek.net",dir=FALSE,encoding="
   for(e in 1:m) cat(u[e],v[e],W[e],ifelse(time,paste(" [",t[e],"]"),""),"\n",file=net)
   close(net)
 } 
+
+vector2nam <- function(N,Nam="Pajek.nam",encoding="UTF-8"){
+  n <- length(N); nam <- file(Nam,"w",encoding=encoding)
+  if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=nam)
+  cat("% vec2Pajek names",date(),"\n*vertices",n,"\n",file=nam)
+  for(i in 1:n) cat(i,' "',N[i],'"\n',sep='',file=nam)
+  close(nam)
+}
 
 vector2clu <- function(C,Clu="Pajek.clu"){
   n <- length(C); clu <- file(Clu,"w")
@@ -314,3 +325,4 @@ listTitles <- function(resF,win){
 }
 
  
+
