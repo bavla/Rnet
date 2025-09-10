@@ -16,6 +16,7 @@
 #   Feb  9, 2025 - net2matrix, matrix2net / nolink
 #   May  2, 2025 - uvLab2net factorization of U, V and default W=1
 #   Aug  8, 2025 - removehash, vector2nam saves names to a NAM file
+#   Sep 10, 2025 - uvLabs2net
 #
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 # http://localhost:8800/doku.php?id=work:bib:alex:lst
@@ -124,6 +125,26 @@ uvFac2net <- function(u,v,w=NULL,r=NULL,t=NULL,Net="Pajek.net",twomode=FALSE,enc
   cat("*arcs\n",file=net)
   for(i in 1:length(u)) cat(ifelse(is.null(r),"",paste(R[i],": ",sep="")),
     U[i],V[i]+twomode*n,w[i],
+    ifelse(is.null(t),"",paste(" [",t[i],"]",sep="")),"\n",file=net)
+  close(net)
+}
+
+uvLabs2net <- function(u,v,uLab=NULL,vLab=NULL,w=NULL,r=NULL,t=NULL,
+  Net="Pajek.net",twomode=FALSE,encoding="UTF-8"){
+  net <- file(Net,"w",encoding=encoding)
+  if(encoding=="UTF-8") cat('\xEF\xBB\xBF',file=net)
+  if(is.null(w)) w <- rep(1,length(u))
+  n <- length(uLab)
+  if(twomode) m <- length(vLab)
+  if(twomode) cat("% uvLab2Pajek",date(),"\n*vertices",n+m,n,"\n",file=net) else
+    cat("% uvFac2Pajek",date(),"\n*vertices",n,"\n",file=net)
+  for(i in 1:n) cat(i,' "',uLab[i],'"\n',sep="",file=net)
+  if(twomode) for(i in 1:m) cat(i+n,' "',vLab[i],'"\n',sep="",file=net)
+  if(!is.null(r)){R <- as.integer(r); N <- levels(r)
+    for(i in 1:length(N)) cat("*arcs :",i,' "',N[i],'"\n',sep="",file=net)}
+  cat("*arcs\n",file=net)
+  for(i in 1:length(u)) cat(ifelse(is.null(r),"",paste(R[i],": ",sep="")),
+    u[i],v[i]+twomode*n,w[i],
     ifelse(is.null(t),"",paste(" [",t[i],"]",sep="")),"\n",file=net)
   close(net)
 }
@@ -325,4 +346,5 @@ listTitles <- function(resF,win){
 }
 
  
+
 
