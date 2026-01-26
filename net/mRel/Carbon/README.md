@@ -1,6 +1,6 @@
 # Carbon Trade Network (CTN) 2000 and 2020
 
-[https://raw.githubusercontent.com/bavla/Rnet/master/net/mRel/Lazega/Lazega-Law-Firm.paj](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/net/mRel/Carbon/carbon.paj)
+https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/net/mRel/Carbon/carbon.paj
 
 
 Carbon Trade Networks (CTN) for years 2000 and 2020 from the paper
