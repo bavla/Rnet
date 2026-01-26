@@ -1,10 +1,6 @@
 # Carbon Trade Network (CTN) 2000 and 2020
 
-https://raw.githubusercontent.com/bavla/Rnet/master/net/mRel/Lazega/Lazega-Law-Firm.paj
-
-The data are available for example at
-- https://manliodedomenico.com/data.php
-- https://www.stats.ox.ac.uk/~snijders/siena/Lazega_lawyers_data.htm
+[https://raw.githubusercontent.com/bavla/Rnet/master/net/mRel/Lazega/Lazega-Law-Firm.paj](https://raw.githubusercontent.com/bavla/Rnet/refs/heads/master/net/mRel/Carbon/carbon.paj)
 
 
 Carbon Trade Networks (CTN) for years 2000 and 2020 from the paper
