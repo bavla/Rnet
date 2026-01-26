@@ -9,7 +9,7 @@ Guidi, G., Mastrandrea, R., Facchini, A. et al. Tracing two decades of carbon em
 
 converted into Pajek format by Vladimir Batagelj (Mon Jan 2026).
 	
-The multirelational social network on 112 nodes consists of 2 relations (year 2000 (1104), year 2020 (575)) between world countries.
+The multirelational social network on 112 nodes consists of 2 relations (year 2000 (9248 arcs), year 2020 (10150 arcs)) between world countries.
 
 
 
