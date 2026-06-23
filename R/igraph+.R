@@ -137,7 +137,7 @@ vertex_cut <- function(N,atn,t){
 
 edge_cut <- function(N,atn,t){
   w <- edge_attr(N,atn); eCut <- E(N)[w>=t] 
-  return(subgraph.edges(N,eCut))
+  return(subgraph_from_edges(N,eCut))
 }
 
 
