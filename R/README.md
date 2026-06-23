@@ -81,3 +81,28 @@ type in { 'rank', 'total', 'count' }.
 ### varCutree(R,var,vmin,vmax)
 
 Alternative cutting of clusters.
+
+
+## iGraph+
+
+source("https://raw.githubusercontent.com/bavla/Rnet/master/R/igraph+.R")
+
+write.graph.paj <- function(N,file="test.paj",vname="name",coor=NULL,va=NULL,ea=NULL,weight="weight",ecolor="color")
+
+write.graph.netsJSON <- function(N,file="test.json",vname="name" ){
+
+graph.reverse <- function (graph) {
+
+top <- function(v,k){
+
+read_Pajek_clu <- function(f,skip=1){
+
+read_Pajek_vec <- function(f,skip=1){
+
+extract_clusters <- function(N,atn,clus){
+
+vertex_cut <- function(N,atn,t){
+
+edge_cut <- function(N,atn,t){
+
+
