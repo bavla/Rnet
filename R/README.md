@@ -101,8 +101,12 @@ read_Pajek_vec <- function(f,skip=1){
 
 extract_clusters <- function(N,atn,clus){
 
-vertex_cut <- function(N,atn,t){
+node_cut <- function(N,atn,t){
 
-edge_cut <- function(N,atn,t){
+link_cut <- function(N,atn,t){
 
+fname <- function(x) x[1]   # first name
 
+canam <- function(x) paste0("#",x[1])  # canonical name
+
+namec <- function(x) paste0(x,collapse=",")  # name list
