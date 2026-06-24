@@ -1,12 +1,17 @@
 # This file contains some additional functions used in igraph examples
 # for the Network analysis course at HSE Moscow in November 2017 and
 # December 2018 by Vladimir Batagelj
+# 23. June 2026  functions  fname, canam, namec
 
 # source("https://raw.githubusercontent.com/bavla/Rnet/master/R/igraph+.R")
 
 empty <- character(0)
 
 normalize <- function(x,marg=0) return ((1-2*marg)*(x-min(x))/(max(x)-min(x))+marg)
+
+fname <- function(x) x[1]   # first name
+canam <- function(x) paste0("#",x[1])  # canonical name
+namec <- function(x) paste0(x,collapse=",")  # name list
 
 write.graph.paj <- function(N,file="test.paj",vname="name",coor=NULL,va=NULL,ea=NULL,
   weight="weight",ecolor="color"){
