@@ -135,12 +135,12 @@ extract_clusters <- function(N,atn,clus){
   return(induced_subgraph(N,S))
 }
 
-vertex_cut <- function(N,atn,t){
+node_cut <- function(N,atn,t){
   v <- vertex_attr(N,atn); vCut <- V(N)[v>=t] 
   return(induced_subgraph(N,vCut))
 }
 
-edge_cut <- function(N,atn,t){
+link_cut <- function(N,atn,t){
   w <- edge_attr(N,atn); eCut <- E(N)[w>=t] 
   return(subgraph_from_edges(N,eCut))
 }
